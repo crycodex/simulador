@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { ref, computed } from 'vue'
+import { ref, computed, readonly } from 'vue'
 import type {
   Pregunta,
   RespuestaUsuario,
@@ -93,6 +93,7 @@ export const useSimuladorStore = defineStore('simulador', () => {
       if (estado.value === 'ejecutando') {
         tiempoTranscurrido.value++
         tiempoRestante.value--
+        console.log('Timer:', tiempoRestante.value, 'segundos restantes')
 
         if (tiempoRestante.value <= 0) {
           finalizarSimulador()
@@ -243,14 +244,14 @@ export const useSimuladorStore = defineStore('simulador', () => {
 
   return {
     // Estado
-    estado,
+    estado: readonly(estado),
     configuracion,
     preguntas,
     preguntasSeleccionadas,
     respuestas,
-    preguntaActual,
-    tiempoRestante,
-    tiempoTranscurrido,
+    preguntaActual: readonly(preguntaActual),
+    tiempoRestante: readonly(tiempoRestante),
+    tiempoTranscurrido: readonly(tiempoTranscurrido),
 
     // Computed
     preguntaActualData,

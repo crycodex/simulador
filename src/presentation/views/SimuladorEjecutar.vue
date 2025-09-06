@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { storeToRefs } from 'pinia'
 import { useSimuladorStore } from '../../stores/simuladorStore'
 import { useRouter } from 'vue-router'
 
@@ -13,6 +14,9 @@ const {
   tiempoRestanteFormateado,
   tiempoTranscurridoFormateado,
   preguntaActual,
+} = storeToRefs(simuladorStore)
+
+const {
   manejarRespuesta,
   siguientePregunta,
   preguntaAnterior,
@@ -25,7 +29,7 @@ const {
 
 const respuestaActual = ref<string | string[] | Record<string, string>>('')
 const mostrarConfirmacion = ref(false)
-const esPausado = computed(() => estado === 'pausado')
+const esPausado = computed(() => estado.value === 'pausado')
 
 const manejarRespuestaUsuario = (respuesta: string | string[] | Record<string, string>) => {
   respuestaActual.value = respuesta
@@ -33,18 +37,23 @@ const manejarRespuestaUsuario = (respuesta: string | string[] | Record<string, s
 }
 
 const manejarSiguiente = () => {
-  if (preguntaActual < totalPreguntas - 1) {
+  console.log('Pregunta actual:', preguntaActual.value, 'Total:', totalPreguntas.value)
+  if (preguntaActual.value < totalPreguntas.value - 1) {
     siguientePregunta()
     respuestaActual.value = ''
+    console.log('Navegando a siguiente pregunta:', preguntaActual.value)
   } else {
+    console.log('Mostrando confirmación de finalización')
     mostrarConfirmacion.value = true
   }
 }
 
 const manejarAnterior = () => {
-  if (preguntaActual > 0) {
+  console.log('Pregunta actual:', preguntaActual.value)
+  if (preguntaActual.value > 0) {
     preguntaAnterior()
     respuestaActual.value = ''
+    console.log('Navegando a pregunta anterior:', preguntaActual.value)
   }
 }
 
@@ -83,16 +92,16 @@ const getTipoPregunta = (pregunta: any) => {
 }
 
 onMounted(() => {
-  console.log('Estado del simulador al montar:', estado)
-  console.log('Preguntas disponibles:', totalPreguntas)
-  if (estado === 'configurando' || totalPreguntas === 0) {
+  console.log('Estado del simulador al montar:', estado.value)
+  console.log('Preguntas disponibles:', totalPreguntas.value)
+  if (estado.value === 'configurando' || totalPreguntas.value === 0) {
     console.log('Redirigiendo a configuración...')
     router.push('/simulador/config')
   }
 })
 
 onUnmounted(() => {
-  if (estado === 'ejecutando') {
+  if (estado.value === 'ejecutando') {
     pausarSimulador()
   }
 })

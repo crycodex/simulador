@@ -1,11 +1,13 @@
 <script setup lang="ts">
+import { storeToRefs } from 'pinia'
 import { useSimuladorStore } from '../../stores/simuladorStore'
 import { useRouter } from 'vue-router'
 import preguntasData from '../../data/preguntas.json'
 
 const router = useRouter()
 const simuladorStore = useSimuladorStore()
-const { configuracion, iniciarSimulador, cargarPreguntas } = simuladorStore
+const { configuracion } = storeToRefs(simuladorStore)
+const { iniciarSimulador, cargarPreguntas } = simuladorStore
 
 const complejidades = [
   { value: 'todas', label: 'Todas las complejidades', icon: 'lucide:layers' },
