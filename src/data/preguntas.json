@@ -1,0 +1,157 @@
+[
+  {
+    "id": "1",
+    "pregunta": "En Escherichia coli, las enzimas necesarias para sintetizar el aminoácido arginina solo se producen cuando la arginina está ausente del medio de cultivo; un exceso de arginina reprime la síntesis de estas enzimas. Este proceso recibe el nombre de inducción enzimática.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Falso",
+    "tipo": "verdadero_falso",
+    "complejidad": "intermedia",
+    "categoria": "Biología Molecular",
+    "tiempo_estimado": 60
+  },
+  {
+    "id": "2",
+    "pregunta": "Elemento que componen a un operón",
+    "opciones": [
+      "Elementos de control",
+      "Genes estructurales",
+      "Gen regulador",
+      "Proteína represora",
+      "Operador",
+      "Promotor"
+    ],
+    "respuesta_correcta": [
+      "Gen regulador",
+      "Elementos de control",
+      "Genes estructurales",
+      "Proteína represora",
+      "Promotor",
+      "Operador"
+    ],
+    "tipo": "opcion_multiple",
+    "complejidad": "avanzada",
+    "categoria": "Biología Molecular",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "3",
+    "pregunta": "El operón lac es un conjunto de genes en la bacteria E. coli que están involucrados en la digestión de lactosa. La regulación de la expresión génica del operón lac trabaja de diferente manera cuando existe la presencia de sustrato. Ordene los pasos correctos.",
+    "opciones": [
+      "La galactosa se convierte en alolactosa",
+      "Se desprende del operador",
+      "En presencia de lactosa, la enzima beta-galactosidasa convierte la lactosa en glucosa y galactosa",
+      "Se une al represor lac y causa cambio conformacional",
+      "El ARN polimerasa se une al promotor del operon lac"
+    ],
+    "respuesta_correcta": [
+      "En presencia de lactosa, la enzima beta-galactosidasa convierte la lactosa en glucosa y galactosa",
+      "La galactosa se convierte en alolactosa",
+      "Se une al represor lac y causa cambio conformacional",
+      "Se desprende del operador",
+      "El ARN polimerasa se une al promotor del operon lac"
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "avanzada",
+    "categoria": "Biología Molecular",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "4",
+    "pregunta": "Para que un gen sea transcrito, la RNA-polimerasa debe reconocer un promotor específico en el DNA y comenzar su actividad. Relacione los siguientes tipos de control con su definición.",
+    "opciones": [
+      "Control negativo",
+      "Control positivo",
+      "Dedos de zing",
+      "Hélice-giro-hélice",
+      "Cremallera de leucina"
+    ],
+    "respuesta_correcta": {
+      "Control negativo": "Proceso de fermentación que implica la acción de ciertos tipos de hongos y bacterias para convertir los azúcares en ácido láctico",
+      "Control positivo": "Se activa la unión de la RNA-polimerasa al DNA",
+      "Dedos de zing": "Existen diferentes uniones a iones de zinc",
+      "Hélice-giro-hélice": "Consiste en dos segmentos de cadena polipeptídica con una estructura secundaria en hélice α conectadas entre sí por una secuencia corta",
+      "Cremallera de leucina": "Contiene residuos de aminoácidos espaciados regularmente que mantienen dos hélices de reconocimiento en la orientación correcta para unirse al DNA"
+    },
+    "tipo": "relacionar",
+    "complejidad": "avanzada",
+    "categoria": "Biología Molecular",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "5",
+    "pregunta": "Todos los genes de un__________ se transcriben en una sola unidad que genera un único________. El operador está situado después del________ donde empieza la síntesis del mRNA. Si el represor se une al operador, la transcripción se__________ físicamente.",
+    "opciones": [
+      "Operón / RNA/ gen estructural/ bloquea",
+      "Promotor / DNA/ gen estructural/ activa",
+      "Operón/ mRNA / promotor/ bloquea",
+      "Inductor/ mRNA/ promotor/ activa"
+    ],
+    "respuesta_correcta": "Operón/ mRNA / promotor/ bloquea",
+    "tipo": "opcion_simple",
+    "complejidad": "intermedia",
+    "categoria": "Biología Molecular",
+    "tiempo_estimado": 75
+  },
+  {
+    "id": "6",
+    "pregunta": "La fotosíntesis es el proceso por el cual las plantas convierten la luz solar en energía química.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Verdadero",
+    "tipo": "verdadero_falso",
+    "complejidad": "basica",
+    "categoria": "Biología General",
+    "tiempo_estimado": 30
+  },
+  {
+    "id": "7",
+    "pregunta": "¿Cuáles de los siguientes son componentes del sistema nervioso central?",
+    "opciones": [
+      "Cerebro",
+      "Médula espinal",
+      "Nervios periféricos",
+      "Ganglios",
+      "Neuronas",
+      "Sistema linfático"
+    ],
+    "respuesta_correcta": ["Cerebro", "Médula espinal"],
+    "tipo": "opcion_multiple",
+    "complejidad": "intermedia",
+    "categoria": "Anatomía",
+    "tiempo_estimado": 60
+  },
+  {
+    "id": "8",
+    "pregunta": "Ordene correctamente las fases del ciclo celular:",
+    "opciones": ["G1", "S", "G2", "M", "Citocinesis"],
+    "respuesta_correcta": ["G1", "S", "G2", "M", "Citocinesis"],
+    "tipo": "ordenamiento",
+    "complejidad": "intermedia",
+    "categoria": "Biología Celular",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "9",
+    "pregunta": "Relacione cada tipo de tejido con su función principal:",
+    "opciones": ["Tejido epitelial", "Tejido muscular", "Tejido nervioso", "Tejido conectivo"],
+    "respuesta_correcta": {
+      "Tejido epitelial": "Protección y revestimiento",
+      "Tejido muscular": "Movimiento y contracción",
+      "Tejido nervioso": "Transmisión de impulsos",
+      "Tejido conectivo": "Soporte y unión"
+    },
+    "tipo": "relacionar",
+    "complejidad": "intermedia",
+    "categoria": "Histología",
+    "tiempo_estimado": 75
+  },
+  {
+    "id": "10",
+    "pregunta": "La mitosis es el proceso de división celular que produce células idénticas genéticamente.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Verdadero",
+    "tipo": "verdadero_falso",
+    "complejidad": "basica",
+    "categoria": "Biología Celular",
+    "tiempo_estimado": 30
+  }
+]
