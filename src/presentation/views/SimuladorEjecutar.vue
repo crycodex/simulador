@@ -19,8 +19,6 @@ const {
 const {
   manejarRespuesta,
   siguientePregunta,
-  preguntaAnterior,
-  irAPregunta,
   finalizarSimulador,
   pausarSimulador,
   reanudarSimulador,
@@ -35,14 +33,35 @@ const esPausado = computed(() => estado.value === 'pausado')
 const inicializarRespuesta = () => {
   if (preguntaActualData.value) {
     const tipo = getTipoPregunta(preguntaActualData.value)
-    console.log('Inicializando respuesta para tipo:', tipo)
+    const respuestaExistente = simuladorStore.respuestas[preguntaActual.value]
 
-    if (tipo === 'opcion_multiple' || tipo === 'ordenamiento') {
-      respuestaActual.value = []
-    } else if (tipo === 'relacionar') {
-      respuestaActual.value = {}
+    console.log(
+      'Inicializando respuesta para tipo:',
+      tipo,
+      'Respuesta existente:',
+      respuestaExistente,
+    )
+
+    // Si ya hay una respuesta guardada, extraer solo la respuesta
+    if (respuestaExistente !== undefined && respuestaExistente !== null) {
+      // El store guarda objetos con más información, necesitamos extraer solo la respuesta
+      const respuesta =
+        typeof respuestaExistente === 'object' && 'respuesta' in respuestaExistente
+          ? respuestaExistente.respuesta
+          : respuestaExistente
+
+      respuestaActual.value = respuesta as string | string[] | Record<string, string>
+      console.log('Cargando respuesta existente:', respuesta)
     } else {
-      respuestaActual.value = ''
+      // Inicializar con valor por defecto según el tipo
+      if (tipo === 'opcion_multiple' || tipo === 'ordenamiento') {
+        respuestaActual.value = []
+      } else if (tipo === 'relacionar') {
+        respuestaActual.value = {}
+      } else {
+        respuestaActual.value = ''
+      }
+      console.log('Inicializando con valor por defecto:', respuestaActual.value)
     }
   }
 }
@@ -54,8 +73,31 @@ const opcionesDisponibles = ref<string[]>([])
 // Inicializar orden para preguntas de ordenamiento
 const inicializarOrden = () => {
   if (preguntaActualData.value && getTipoPregunta(preguntaActualData.value) === 'ordenamiento') {
-    ordenActual.value = []
-    opcionesDisponibles.value = [...preguntaActualData.value.opciones]
+    const respuestaExistente = simuladorStore.respuestas[preguntaActual.value]
+
+    // Extraer la respuesta del objeto guardado
+    let respuesta: string[] = []
+    if (respuestaExistente !== undefined && respuestaExistente !== null) {
+      if (typeof respuestaExistente === 'object' && 'respuesta' in respuestaExistente) {
+        respuesta = Array.isArray(respuestaExistente.respuesta) ? respuestaExistente.respuesta : []
+      } else if (Array.isArray(respuestaExistente)) {
+        respuesta = respuestaExistente
+      }
+    }
+
+    if (respuesta.length > 0) {
+      // Cargar orden existente
+      ordenActual.value = [...respuesta]
+      opcionesDisponibles.value = preguntaActualData.value.opciones.filter(
+        (opcion) => !respuesta.includes(opcion),
+      )
+      console.log('Cargando orden existente:', ordenActual.value)
+    } else {
+      // Inicializar orden vacío
+      ordenActual.value = []
+      opcionesDisponibles.value = [...preguntaActualData.value.opciones]
+      console.log('Inicializando orden vacío')
+    }
   }
 }
 
@@ -98,25 +140,15 @@ const manejarRespuestaUsuario = (respuesta: string | string[] | Record<string, s
 }
 
 const manejarSiguiente = () => {
-  console.log('Pregunta actual:', preguntaActual.value, 'Total:', totalPreguntas.value)
+  console.log('Pregunta actual:', preguntaActual.value + 1, 'Total:', totalPreguntas.value)
+
+  // Solo permitir avanzar si no es la última pregunta
   if (preguntaActual.value < totalPreguntas.value - 1) {
     siguientePregunta()
-    inicializarRespuesta()
-    inicializarOrden()
-    console.log('Navegando a siguiente pregunta:', preguntaActual.value)
+    console.log('Avanzando a siguiente pregunta:', preguntaActual.value + 1)
   } else {
     console.log('Mostrando confirmación de finalización')
     mostrarConfirmacion.value = true
-  }
-}
-
-const manejarAnterior = () => {
-  console.log('Pregunta actual:', preguntaActual.value)
-  if (preguntaActual.value > 0) {
-    preguntaAnterior()
-    inicializarRespuesta()
-    inicializarOrden()
-    console.log('Navegando a pregunta anterior:', preguntaActual.value)
   }
 }
 
@@ -172,6 +204,32 @@ const getTipoPregunta = (pregunta: any) => {
   return 'opcion_simple'
 }
 
+// Verificar si una pregunta ha sido respondida
+const esPreguntaRespondida = (index: number) => {
+  const respuesta = simuladorStore.respuestas[index]
+  if (!respuesta) return false
+
+  // Verificar diferentes tipos de respuesta
+  if (Array.isArray(respuesta)) {
+    return respuesta.length > 0
+  }
+  if (typeof respuesta === 'object') {
+    return Object.keys(respuesta).length > 0
+  }
+  return respuesta !== '' && respuesta !== null && respuesta !== undefined
+}
+
+// Obtener el estado de una pregunta para los estilos
+const getEstadoPregunta = (index: number) => {
+  if (index === preguntaActual.value) {
+    return 'actual'
+  }
+  if (esPreguntaRespondida(index)) {
+    return 'respondida'
+  }
+  return 'no-respondida'
+}
+
 onMounted(() => {
   console.log('Estado del simulador al montar:', estado.value)
   console.log('Preguntas disponibles:', totalPreguntas.value)
@@ -185,10 +243,14 @@ onMounted(() => {
 })
 
 // Watcher para inicializar respuesta cuando cambie la pregunta
-watch(preguntaActual, () => {
-  console.log('Pregunta actual cambió, reinicializando respuesta')
-  inicializarRespuesta()
-  inicializarOrden()
+watch(preguntaActual, (nuevaPregunta, preguntaAnterior) => {
+  console.log('Pregunta actual cambió de', preguntaAnterior + 1, 'a', nuevaPregunta + 1)
+  // Usar nextTick para asegurar que los datos reactivos se hayan actualizado
+  setTimeout(() => {
+    inicializarRespuesta()
+    inicializarOrden()
+    console.log('Estado reinicializado para pregunta:', nuevaPregunta + 1)
+  }, 0)
 })
 
 onUnmounted(() => {
@@ -393,18 +455,8 @@ onUnmounted(() => {
           </div>
         </div>
 
-        <!-- Navegación -->
-        <div class="flex justify-between items-center">
-          <button
-            @click="manejarAnterior"
-            :disabled="preguntaActual === 0"
-            class="btn btn-outline gap-2"
-            :class="{ 'btn-disabled': preguntaActual === 0 }"
-          >
-            <Icon icon="lucide:arrow-left" class="w-4 h-4" />
-            Anterior
-          </button>
-
+        <!-- Navegación (solo siguiente) -->
+        <div class="flex justify-center items-center">
           <div class="flex gap-2">
             <button @click="manejarSiguiente" class="btn btn-primary gap-2">
               {{ preguntaActual === totalPreguntas - 1 ? 'Finalizar' : 'Siguiente' }}
@@ -413,22 +465,44 @@ onUnmounted(() => {
           </div>
         </div>
 
-        <!-- Navegación rápida -->
+        <!-- Indicador de progreso (solo visual) -->
         <div class="mt-6">
-          <h3 class="text-lg font-semibold mb-3">Navegación Rápida</h3>
+          <h3 class="text-lg font-semibold mb-3">Progreso del Simulador</h3>
           <div class="flex flex-wrap gap-2">
-            <button
+            <div
               v-for="(_, index) in totalPreguntas"
               :key="index"
-              @click="irAPregunta(index)"
-              class="btn btn-sm"
+              class="btn btn-sm relative cursor-default"
               :class="{
-                'btn-primary': index === preguntaActual,
-                'btn-outline': index !== preguntaActual,
+                'btn-primary': getEstadoPregunta(index) === 'actual',
+                'btn-success': getEstadoPregunta(index) === 'respondida',
+                'btn-outline': getEstadoPregunta(index) === 'no-respondida',
               }"
+              :title="`Pregunta ${index + 1} - ${getEstadoPregunta(index) === 'actual' ? 'Actual' : getEstadoPregunta(index) === 'respondida' ? 'Respondida' : 'Sin responder'}`"
             >
+              <Icon
+                v-if="getEstadoPregunta(index) === 'respondida'"
+                icon="lucide:check"
+                class="w-3 h-3 mr-1"
+              />
               {{ index + 1 }}
-            </button>
+            </div>
+          </div>
+
+          <!-- Leyenda -->
+          <div class="mt-4 flex flex-wrap gap-4 text-sm">
+            <div class="flex items-center gap-2">
+              <div class="w-4 h-4 bg-primary rounded"></div>
+              <span>Pregunta actual</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-4 h-4 bg-success rounded"></div>
+              <span>Respondida</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-4 h-4 border-2 border-base-300 rounded"></div>
+              <span>Sin responder</span>
+            </div>
           </div>
         </div>
       </div>

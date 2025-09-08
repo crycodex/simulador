@@ -27,7 +27,7 @@ const getThemeLabel = () => {
 <template>
   <div class="navbar shadow-sm fixed top-0 left-0 right-0 z-50 backdrop-blur-sm">
     <div class="flex-1">
-      <a class="btn btn-ghost text-xl">Simulador</a>
+      <a class="btn btn-ghost text-xl" href="/">Simulador</a>
     </div>
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1">
