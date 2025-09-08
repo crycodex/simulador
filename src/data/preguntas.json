@@ -5,37 +5,37 @@
     "opciones": ["Verdadero", "Falso"],
     "respuesta_correcta": "Falso",
     "tipo": "verdadero_falso",
-    "complejidad": "intermedia",
-    "categoria": "Biología Molecular",
+    "complejidad": "baja",
+    "categoria": "Regulación de la expresión génica en procariotes",
     "tiempo_estimado": 60
   },
   {
     "id": "2",
-    "pregunta": "Elemento que componen a un operón",
-    "opciones": [
-      "Elementos de control",
-      "Genes estructurales",
-      "Gen regulador",
-      "Proteína represora",
-      "Operador",
-      "Promotor"
-    ],
-    "respuesta_correcta": [
-      "Gen regulador",
-      "Elementos de control",
-      "Genes estructurales",
-      "Proteína represora",
-      "Promotor",
-      "Operador"
-    ],
-    "tipo": "opcion_multiple",
-    "complejidad": "avanzada",
-    "categoria": "Biología Molecular",
+    "pregunta": "Identifique los elementos que componen a un operón según el esquema proporcionado.",
+    "opciones": {
+      "1": "Gen regulador",
+      "2": "Elementos de control",
+      "3": "Genes estructurales",
+      "4": "Proteína represora",
+      "5": "Promotor",
+      "6": "Operador"
+    },
+    "respuesta_correcta": {
+      "1": "Gen regulador",
+      "2": "Elementos de control",
+      "3": "Genes estructurales",
+      "4": "Proteína represora",
+      "5": "Promotor",
+      "6": "Operador"
+    },
+    "tipo": "relacionar_imagen",
+    "complejidad": "media",
+    "categoria": "Regulación de la expresión génica en procariotes",
     "tiempo_estimado": 90
   },
   {
     "id": "3",
-    "pregunta": "El operón lac es un conjunto de genes en la bacteria E. coli que están involucrados en la digestión de lactosa. La regulación de la expresión génica del operón lac trabaja de diferente manera cuando existe la presencia de sustrato. Ordene los pasos correctos.",
+    "pregunta": "El operón lac es un conjunto de genes en la bacteria E. coli que están involucrados en la digestión de lactosa. La regulación de la expresión génica del operón lac trabaja de diferente manera cuando existe la presencia de sustrato. Ordene los pasos del proceso.",
     "opciones": [
       "La galactosa se convierte en alolactosa",
       "Se desprende del operador",
@@ -51,107 +51,2337 @@
       "El ARN polimerasa se une al promotor del operon lac"
     ],
     "tipo": "ordenamiento",
-    "complejidad": "avanzada",
-    "categoria": "Biología Molecular",
+    "complejidad": "alta",
+    "categoria": "Regulación de la expresión génica en procariotes",
     "tiempo_estimado": 120
   },
   {
     "id": "4",
-    "pregunta": "Para que un gen sea transcrito, la RNA-polimerasa debe reconocer un promotor específico en el DNA y comenzar su actividad. Relacione los siguientes tipos de control con su definición.",
-    "opciones": [
-      "Control negativo",
-      "Control positivo",
-      "Dedos de zing",
-      "Hélice-giro-hélice",
-      "Cremallera de leucina"
-    ],
+    "pregunta": "Para que un gen sea transcrito, la RNA-polimerasa debe reconocer un promotor específico en el DNA y comenzar su actividad. Relacione los siguientes conceptos de regulación de la transcripción con su definición.",
+    "opciones": {
+      "Control negativo": "Proceso de fermentación que implica la acción de ciertos tipos de hongos y bacterias para convertir los azúcares en ácido láctico.",
+      "Control positivo": "Se activa la unión de la RNA-polimerasa al DNA.",
+      "Dedos de zinc": "Existe diferentes uniones a iones de zinc.",
+      "Hélice-giro-hélice": "Consiste en dos segmentos de cadena polipeptídica con una estructura secundaria en hélice a conectadas entre sí por una secuencia corta.",
+      "Cremallera de leucina": "Contiene residuos de aminoácidos espaciados regularmente y que funcionan manteniendo dos hélices de reconocimiento en la orientación correcta para que se unan al DNA."
+    },
     "respuesta_correcta": {
-      "Control negativo": "Proceso de fermentación que implica la acción de ciertos tipos de hongos y bacterias para convertir los azúcares en ácido láctico",
-      "Control positivo": "Se activa la unión de la RNA-polimerasa al DNA",
-      "Dedos de zing": "Existen diferentes uniones a iones de zinc",
-      "Hélice-giro-hélice": "Consiste en dos segmentos de cadena polipeptídica con una estructura secundaria en hélice α conectadas entre sí por una secuencia corta",
-      "Cremallera de leucina": "Contiene residuos de aminoácidos espaciados regularmente que mantienen dos hélices de reconocimiento en la orientación correcta para unirse al DNA"
+      "Control negativo": "Proceso de fermentación que implica la acción de ciertos tipos de hongos y bacterias para convertir los azúcares en ácido láctico.",
+      "Control positivo": "Se activa la unión de la RNA-polimerasa al DNA.",
+      "Dedos de zinc": "Existe diferentes uniones a iones de zinc.",
+      "Hélice-giro-hélice": "Consiste en dos segmentos de cadena polipeptídica con una estructura secundaria en hélice a conectadas entre sí por una secuencia corta.",
+      "Cremallera de leucina": "Contiene residuos de aminoácidos espaciados regularmente y que funcionan manteniendo dos hélices de reconocimiento en la orientación correcta para que se unan al DNA."
     },
     "tipo": "relacionar",
-    "complejidad": "avanzada",
-    "categoria": "Biología Molecular",
+    "complejidad": "alta",
+    "categoria": "Regulación de la expresión génica en procariotes",
     "tiempo_estimado": 150
   },
   {
     "id": "5",
-    "pregunta": "Todos los genes de un__________ se transcriben en una sola unidad que genera un único________. El operador está situado después del________ donde empieza la síntesis del mRNA. Si el represor se une al operador, la transcripción se__________ físicamente.",
+    "pregunta": "Complete el siguiente enunciado: Todos los genes de un (1)______ se transcriben en una sola unidad que genera un único (2)______. El operador está situado después del (3)______ donde empieza la síntesis del mRNA. Si el represor se une al operador, la transcripción se (4)______ físicamente.",
     "opciones": [
-      "Operón / RNA/ gen estructural/ bloquea",
-      "Promotor / DNA/ gen estructural/ activa",
-      "Operón/ mRNA / promotor/ bloquea",
-      "Inductor/ mRNA/ promotor/ activa"
+      "(1) Operón / (2) RNA/ (3) gen estructural/ (4) bloquea",
+      "(1) Promotor / (2) DNA/ (3) gen estructural/ (4) activa",
+      "(1) Operón / (2) mRNA/ (3) promotor/ (4) bloquea",
+      "(1) Inductor / (2) mRNA/ (3) promotor/ (4) activa"
     ],
-    "respuesta_correcta": "Operón/ mRNA / promotor/ bloquea",
+    "respuesta_correcta": "(1) Operón / (2) mRNA/ (3) promotor/ (4) bloquea",
     "tipo": "opcion_simple",
-    "complejidad": "intermedia",
-    "categoria": "Biología Molecular",
-    "tiempo_estimado": 75
+    "complejidad": "media",
+    "categoria": "Regulación de la expresión génica en procariotes",
+    "tiempo_estimado": 90
   },
   {
     "id": "6",
-    "pregunta": "La fotosíntesis es el proceso por el cual las plantas convierten la luz solar en energía química.",
-    "opciones": ["Verdadero", "Falso"],
-    "respuesta_correcta": "Verdadero",
-    "tipo": "verdadero_falso",
-    "complejidad": "basica",
-    "categoria": "Biología General",
-    "tiempo_estimado": 30
+    "pregunta": "A partir de la gráfica de inducción, responda: A) ¿Qué tipo de control negativo de la transcripción muestra la gráfica? B) ¿Qué ocurre con la formación de los otros productos (total de proteínas y número de células)? C) ¿Por qué se induce la formación de la enzima β-galactosidasa?",
+    "opciones": [
+      "A) Represión enzimática, B) La síntesis neta se ve afectada, C) Por la ausencia de lactosa",
+      "A) Inducción enzimática, B) La síntesis neta de proteína y células no se ve afectada, C) Debido a la adición de lactosa al medio"
+    ],
+    "respuesta_correcta": "A) Inducción enzimática, B) La síntesis neta de proteína y células no se ve afectada, C) Debido a la adición de lactosa al medio",
+    "tipo": "multi_item",
+    "complejidad": "media",
+    "categoria": "Regulación de la expresión génica en procariotes",
+    "tiempo_estimado": 120
   },
   {
     "id": "7",
-    "pregunta": "¿Cuáles de los siguientes son componentes del sistema nervioso central?",
-    "opciones": [
-      "Cerebro",
-      "Médula espinal",
-      "Nervios periféricos",
-      "Ganglios",
-      "Neuronas",
-      "Sistema linfático"
-    ],
-    "respuesta_correcta": ["Cerebro", "Médula espinal"],
-    "tipo": "opcion_multiple",
-    "complejidad": "intermedia",
-    "categoria": "Anatomía",
-    "tiempo_estimado": 60
+    "pregunta": "Las bacterias ácido-lácticas son utilizadas en la producción de productos fermentados como el yogur y el queso.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Verdadero",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "Microbiología Industrial",
+    "tiempo_estimado": 30
   },
   {
     "id": "8",
-    "pregunta": "Ordene correctamente las fases del ciclo celular:",
-    "opciones": ["G1", "S", "G2", "M", "Citocinesis"],
-    "respuesta_correcta": ["G1", "S", "G2", "M", "Citocinesis"],
-    "tipo": "ordenamiento",
-    "complejidad": "intermedia",
-    "categoria": "Biología Celular",
+    "pregunta": "Identifique los pasos del proceso fermentativo para la elaboración de cerveza según el esquema.",
+    "opciones": {
+      "1": "Humectación y germinación de la cebada",
+      "2": "Maceración y adición del lúpulo",
+      "3": "Inactivación de enzimas",
+      "4": "Fermentación"
+    },
+    "respuesta_correcta": {
+      "1": "Humectación y germinación de la cebada",
+      "2": "Maceración y adición del lúpulo",
+      "3": "Inactivación de enzimas",
+      "4": "Fermentación"
+    },
+    "tipo": "relacionar_imagen",
+    "complejidad": "media",
+    "categoria": "Microbiología Industrial",
     "tiempo_estimado": 90
   },
   {
     "id": "9",
-    "pregunta": "Relacione cada tipo de tejido con su función principal:",
-    "opciones": ["Tejido epitelial", "Tejido muscular", "Tejido nervioso", "Tejido conectivo"],
-    "respuesta_correcta": {
-      "Tejido epitelial": "Protección y revestimiento",
-      "Tejido muscular": "Movimiento y contracción",
-      "Tejido nervioso": "Transmisión de impulsos",
-      "Tejido conectivo": "Soporte y unión"
-    },
-    "tipo": "relacionar",
-    "complejidad": "intermedia",
-    "categoria": "Histología",
-    "tiempo_estimado": 75
+    "pregunta": "En la panificación, el crecimiento de la levadura se lleva a cabo en condiciones aerobias, resultando en una mayor producción de CO2. Ordene los pasos para la producción de pan.",
+    "opciones": [
+      "Se añade la cepa de la levadura Saccharomyces cerevisiae",
+      "El CO2 producido por la levadura hace que el pan suba",
+      "Las amilasas α y β presentes en la masa humedecida liberan maltosa y glucosa del almidón",
+      "Produce las enzimas maltasa, invertasa y zimasa"
+    ],
+    "respuesta_correcta": [
+      "Las amilasas α y β presentes en la masa humedecida liberan maltosa y glucosa del almidón",
+      "Se añade la cepa de la levadura Saccharomyces cerevisiae",
+      "Produce las enzimas maltasa, invertasa y zimasa",
+      "El CO2 producido por la levadura hace que el pan suba"
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "media",
+    "categoria": "Microbiología Industrial",
+    "tiempo_estimado": 120
   },
   {
     "id": "10",
-    "pregunta": "La mitosis es el proceso de división celular que produce células idénticas genéticamente.",
+    "pregunta": "La fermentación se ha utilizado en la producción de alimentos durante miles de años. Relacione los tipos de fermentación con su definición.",
+    "opciones": {
+      "Fermentación mesófila": "Proceso de fermentación que ocurre a temperaturas moderadas, generalmente entre 20°C y 40°C.",
+      "Fermentación termófila": "Proceso de fermentación que ocurre a temperaturas de entre 45°C y 65°C.",
+      "Fermentación levadura-láctica": "Se emplea un cultivo iniciador. Sustrato que contiene varios tipos de microorganismos incluyendo bacterias ácido-lácticas y ácido-acéticas.",
+      "Fermentación moho-láctica": "Proceso de fermentación que implica la acción de ciertos tipos de hongos y bacterias para convertir los azúcares en ácido láctico."
+    },
+    "respuesta_correcta": {
+      "Fermentación mesófila": "Proceso de fermentación que ocurre a temperaturas moderadas, generalmente entre 20°C y 40°C.",
+      "Fermentación termófila": "Proceso de fermentación que ocurre a temperaturas de entre 45°C y 65°C.",
+      "Fermentación levadura-láctica": "Se emplea un cultivo iniciador. Sustrato que contiene varios tipos de microorganismos incluyendo bacterias ácido-lácticas y ácido-acéticas.",
+      "Fermentación moho-láctica": "Proceso de fermentación que implica la acción de ciertos tipos de hongos y bacterias para convertir los azúcares en ácido láctico."
+    },
+    "tipo": "relacionar",
+    "complejidad": "media",
+    "categoria": "Microbiología Industrial",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "11",
+    "pregunta": "Complete el enunciado: Las principales bacterias en la industria de alimentos fermentados son las productoras de ácidos orgánicos, como las bacterias (1)____ en leches fermentadas. La levadura (2)____ produce alcohol. La elevada concentración de alcohol impide el crecimiento de organismos deteriorantes y de (3)____.",
+    "opciones": [
+      "(1) Ácido acéticas / (2) S. pastorianus / (3) aditivos",
+      "(1) Ácido lácticas / (2) Saccharomyces cerevisiae / (3) patógenos",
+      "(1) Lactobacillus spp / (2) S. pastorianus / (3) patógenos",
+      "(1) Aguas lácticas / (2) Saccharomyces / (3) propiedades organolépticas"
+    ],
+    "respuesta_correcta": "(1) Ácido lácticas / (2) Saccharomyces cerevisiae / (3) patógenos",
+    "tipo": "opcion_simple",
+    "complejidad": "media",
+    "categoria": "Microbiología Industrial",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "12",
+    "pregunta": "Observe el perfil de fermentación con L. casei y responda: A) ¿Qué sustrato es más afín para la formación de ácido láctico? B) ¿En qué sustrato hay mayor formación de UFC/L? C) ¿Qué productos se generan a partir de una fermentación ácida de lactosuero?",
+    "opciones": [
+      "A) Lactosuero desproteinizado, B) Lactosuero entero, C) Únicamente ácido láctico y etanol",
+      "A) Lactosuero entero, B) Lactosuero desproteinizado, C) Ácido láctico, yogurt, kéfir y quesos fermentados"
+    ],
+    "respuesta_correcta": "A) Lactosuero entero, B) Lactosuero desproteinizado, C) Ácido láctico, yogurt, kéfir y quesos fermentados",
+    "tipo": "multi_item",
+    "complejidad": "alta",
+    "categoria": "Microbiología Industrial",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "13",
+    "pregunta": "Identifique las características correspondientes a cada numeral en el ciclo del carbono.",
+    "opciones": {
+      "1": "Aporte más importante de CO2 a la atmósfera.",
+      "2": "Forma más rápida de transferencia de carbono.",
+      "3": "Principales lugares de fijación fotosintética de CO2.",
+      "4": "Principales lugares de fijación fotosintética de CO2.",
+      "5": "Contiene mayor cantidad de carbono que los seres vivos y resiste a la descomposición rápida.",
+      "6": "Mayor reservorio de carbono en la Tierra."
+    },
+    "respuesta_correcta": {
+      "1": "Aporte más importante de CO2 a la atmósfera.",
+      "2": "Forma más rápida de transferencia de carbono.",
+      "3": "Principales lugares de fijación fotosintética de CO2.",
+      "4": "Principales lugares de fijación fotosintética de CO2.",
+      "5": "Contiene mayor cantidad de carbono que los seres vivos y resiste a la descomposición rápida.",
+      "6": "Mayor reservorio de carbono en la Tierra."
+    },
+    "tipo": "relacionar_imagen",
+    "complejidad": "media",
+    "categoria": "Ciclos de nutrientes",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "14",
+    "pregunta": "Relacione correctamente las transformaciones de los ciclos de nutrientes con sus respectivas reacciones químicas.",
+    "opciones": {
+      "Metanogénesis": "CO2 + 4H2 → CH4 + 2H2O",
+      "Fotosíntesis": "CO2 + H2O → (CH2O) + O2",
+      "Respiración": "(CH2O) + O2 → CO2 + H2O",
+      "Nitrificación": "NH4+ → NO3-; NH4+ → NO2-; NO2- → NO3-",
+      "Desnitrificación": "NO3- → N2",
+      "Anammox": "NO2- + NH3 → 2N2",
+      "Fijación de nitrógeno": "N2 + 8H → NH3 + H2",
+      "Oxidación de sulfuro/azufre": "H2S → S0 → SO42-",
+      "Reducción de sulfato": "SO42- → H2S",
+      "Reducción de azufre": "S0 → H2S"
+    },
+    "respuesta_correcta": {
+      "Metanogénesis": "CO2 + 4H2 → CH4 + 2H2O",
+      "Fotosíntesis": "CO2 + H2O → (CH2O) + O2",
+      "Respiración": "(CH2O) + O2 → CO2 + H2O",
+      "Nitrificación": "NH4+ → NO3-; NH4+ → NO2-; NO2- → NO3-",
+      "Desnitrificación": "NO3- → N2",
+      "Anammox": "NO2- + NH3 → 2N2",
+      "Fijación de nitrógeno": "N2 + 8H → NH3 + H2",
+      "Oxidación de sulfuro/azufre": "H2S → S0 → SO42-",
+      "Reducción de sulfato": "SO42- → H2S",
+      "Reducción de azufre": "S0 → H2S"
+    },
+    "tipo": "relacionar",
+    "complejidad": "alta",
+    "categoria": "Ciclos de nutrientes",
+    "tiempo_estimado": 180
+  },
+  {
+    "id": "15",
+    "pregunta": "En la mayoría de los ambientes existe una mayor contribución a la acumulación de compuestos orgánicos por parte de los organismos fotótrofos oxigénicos. Esto se debe a que el reductor usado por los fotótrofos oxigénicos es el H2O, una fuente ilimitada.",
     "opciones": ["Verdadero", "Falso"],
     "respuesta_correcta": "Verdadero",
     "tipo": "verdadero_falso",
-    "complejidad": "basica",
-    "categoria": "Biología Celular",
+    "complejidad": "media",
+    "categoria": "Ciclos de nutrientes",
+    "tiempo_estimado": 60
+  },
+  {
+    "id": "16",
+    "pregunta": "En base a los gráficos sobre el ciclo del hierro y el manganeso (A) y el papel del humus (B), responda las preguntas.",
+    "opciones": [
+      "1: anaerobia, 2: quimiolitotrófico, 3: solubles, 4: insolubles, 5: transportador de electrones",
+      "1: aerobia, 2: quimioorganotrófico, 3: solubles, 4: insolubles, 5: transportador de electrones",
+      "1: anaerobia, 2: quimiolitotrófico, 3: insolubles, 4: solubles, 5: sustrato microbiano",
+      "1: aerobia, 2: quimioorganotrófico, 3: solubles, 4: insolubles, 5: sustrato microbiano"
+    ],
+    "respuesta_correcta": "1: anaerobia, 2: quimiolitotrófico, 3: solubles, 4: insolubles, 5: transportador de electrones",
+    "tipo": "multi_item",
+    "complejidad": "alta",
+    "categoria": "Ciclos de nutrientes",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "17",
+    "pregunta": "La descomposición anóxica es un proceso que ocurre en los sedimentos del agua dulce. Ordene correctamente los pasos que se llevan a cabo durante este proceso.",
+    "opciones": [
+      "Metanógenos generan CO2 y CH4.",
+      "Organismos realizan una fermentación y forman ácidos grasos de cadena corta, alcoholes y gases.",
+      "Polisacáridos, proteínas, lípidos y ácidos nucleicos de organismos muertos llegan a hábitats anóxicos.",
+      "Bacterias sintróficas realizan una fermentación de ácidos grasos y alcoholes y producen H2, CO2 y acetato.",
+      "Bacterias celulolíticas y bacterias degradadoras de polímeros catabolizan y liberan monómeros.",
+      "Metanógenos consumen H2 y cambian el estado energético de la fermentación a exergónica."
+    ],
+    "respuesta_correcta": [
+      "Polisacáridos, proteínas, lípidos y ácidos nucleicos de organismos muertos llegan a hábitats anóxicos.",
+      "Bacterias celulolíticas y bacterias degradadoras de polímeros catabolizan y liberan monómeros.",
+      "Organismos realizan una fermentación y forman ácidos grasos de cadena corta, alcoholes y gases.",
+      "Bacterias sintróficas realizan una fermentación de ácidos grasos y alcoholes y producen H2, CO2 y acetato.",
+      "Metanógenos consumen H2 y cambian el estado energético de la fermentación a exergónica.",
+      "Metanógenos generan CO2 y CH4."
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "alta",
+    "categoria": "Ciclos de nutrientes",
+    "tiempo_estimado": 180
+  },
+  {
+    "id": "18",
+    "pregunta": "Entre los principales componentes del ciclo del carbono que mayor impacto tienen en el ecosistema global, se encuentran:",
+    "opciones": ["C6H12O6", "CO2", "(CH2O)n", "CH4"],
+    "respuesta_correcta": ["CO2", "CH4"],
+    "tipo": "opcion_multiple",
+    "complejidad": "baja",
+    "categoria": "Ciclos de nutrientes",
+    "tiempo_estimado": 45
+  },
+  {
+    "id": "19",
+    "pregunta": "Identifique cada uno de los pasos de patogenia en el gráfico a continuación.",
+    "opciones": {
+      "1": "Exposición a los patógenos",
+      "2": "Adherencia a la piel o mucosas",
+      "3": "Invasión a través del epitelio del órgano",
+      "4": "Infección: Crecimiento y producción de factores de virulencia y toxinas",
+      "5": "Toxicidad provocada por los efectos de las toxinas",
+      "6": "Invasividad producida por un mayor crecimiento de células patógenas",
+      "7": "Daño en los tejidos y enfermedad"
+    },
+    "respuesta_correcta": {
+      "1": "Exposición a los patógenos",
+      "2": "Adherencia a la piel o mucosas",
+      "3": "Invasión a través del epitelio del órgano",
+      "4": "Infección: Crecimiento y producción de factores de virulencia y toxinas",
+      "5": "Toxicidad provocada por los efectos de las toxinas",
+      "6": "Invasividad producida por un mayor crecimiento de células patógenas",
+      "7": "Daño en los tejidos y enfermedad"
+    },
+    "tipo": "relacionar_imagen",
+    "complejidad": "media",
+    "categoria": "Patogénesis",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "20",
+    "pregunta": "Relacione el tipo de enfermedad infecciosa con la característica según corresponda.",
+    "opciones": {
+      "Emergentes": "Se vuelven prevalentes de manera repentina.",
+      "Endémica": "Está presente en una población en todo momento.",
+      "Aguda": "Comienza de manera rápida y drástica.",
+      "Pandémica": "Infecta a todo el planeta.",
+      "Reemergentes": "Se encontraban controladas, pero aparecen de repente como una nueva epidemia.",
+      "Crónica": "Son de larga duración.",
+      "Epidémica": "Infecta a un gran número de individuos de una población a la vez."
+    },
+    "respuesta_correcta": {
+      "Emergentes": "Se vuelven prevalentes de manera repentina.",
+      "Endémica": "Está presente en una población en todo momento.",
+      "Aguda": "Comienza de manera rápida y drástica.",
+      "Pandémica": "Infecta a todo el planeta.",
+      "Reemergentes": "Se encontraban controladas, pero aparecen de repente como una nueva epidemia.",
+      "Crónica": "Son de larga duración.",
+      "Epidémica": "Infecta a un gran número de individuos de una población a la vez."
+    },
+    "tipo": "relacionar",
+    "complejidad": "media",
+    "categoria": "Patogénesis",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "21",
+    "pregunta": "El VIH/sida es una de las enfermedades que más muertes ha provocado en los últimos años, esta se transmite de forma indirecta de un hospedador vulnerable a un hospedador infectado mediante el intercambio de líquidos corporales durante una relación sexual.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Falso",
+    "tipo": "verdadero_falso",
+    "complejidad": "media",
+    "categoria": "Patogénesis",
+    "tiempo_estimado": 60
+  },
+  {
+    "id": "22",
+    "pregunta": "En base a los gráficos A (virulencia), B (cultivo) y C (toxina diftérica), señale la respuesta correcta para cada pregunta.",
+    "opciones": [
+      "a-más virulenta, b-menos virulenta, c-50 cells, d-5000 cells, e-exotoxina citolítica, f-exotoxina de tipo AB, g-Falso",
+      "a-menos virulenta, b-más virulenta, c-20 cells, d-3000 cells, e-endotoxina citolítica, f-exotoxina de tipo AB, g-Falso",
+      "a-más virulenta, b-menos virulenta, c-50 cells, d-3000 cells, e-exotoxina citolítica, f-exotoxina de tipo AB, g-Verdadero",
+      "a-menos virulenta, b-más virulenta, c-90 cells, d-5000 cells, e-endotoxina citolítica, f-exotoxina de tipo AB, g-Verdadero"
+    ],
+    "respuesta_correcta": "a-más virulenta, b-menos virulenta, c-50 cells, d-5000 cells, e-exotoxina citolítica, f-exotoxina de tipo AB, g-Falso",
+    "tipo": "multi_item",
+    "complejidad": "alta",
+    "categoria": "Patogénesis",
+    "tiempo_estimado": 180
+  },
+  {
+    "id": "23",
+    "pregunta": "Ordene de manera cronológica los pasos que constituyen el proceso de infección y enfermedad de Vibrio cholerae.",
+    "opciones": [
+      "Aumento de cAMP dentro de la célula impide la entrada de sodio (Na+) y provoca la secreción de cloruro (Cl-) y bicarbonato (HCO3-).",
+      "Colonización y secreción de la toxina AB en el intestino del hospedero.",
+      "Hospedero pierde gran cantidad de fluidos de su cuerpo a través de diarrea acuosa y mortal.",
+      "Salida de grandes cantidades de agua desde la sangre hacia el lumen intestinal.",
+      "Entrada de la subunidad A, a la célula epitelial intestinal.",
+      "Unión de la subunidad B de la enterotoxina al gangliósido GM1.",
+      "Activación de la enzima adenilato-ciclasa.",
+      "Ingestión de alimentos o agua contaminados por células de V. cholerae.",
+      "Conversión del ATP en monofosfato de adenosina cíclico (cAMP).",
+      "Cambio y desequilibrio en la concentración de iones."
+    ],
+    "respuesta_correcta": [
+      "Ingestión de alimentos o agua contaminados por células de V. cholerae.",
+      "Colonización y secreción de la toxina AB en el intestino del hospedero.",
+      "Unión de la subunidad B de la enterotoxina al gangliósido GM1.",
+      "Entrada de la subunidad A, a la célula epitelial intestinal.",
+      "Activación de la enzima adenilato-ciclasa.",
+      "Conversión del ATP en monofosfato de adenosina cíclico (cAMP).",
+      "Aumento de cAMP dentro de la célula impide la entrada de sodio (Na+) y provoca la secreción de cloruro (Cl-) y bicarbonato (HCO3-).",
+      "Cambio y desequilibrio en la concentración de iones.",
+      "Salida de grandes cantidades de agua desde la sangre hacia el lumen intestinal.",
+      "Hospedero pierde gran cantidad de fluidos de su cuerpo a través de diarrea acuosa y mortal."
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "alta",
+    "categoria": "Patogénesis",
+    "tiempo_estimado": 200
+  },
+  {
+    "id": "24",
+    "pregunta": "En el 2010 se registraron 47500 casos nuevos de infección por VIH en EE. UU. (15,5 casos nuevos por cada 100 mil personas). A finales del mismo año, había un total de 803771 personas infectadas (262 casos por cada 100 mil habitantes). Seleccione la afirmación correcta.",
+    "opciones": [
+      "Los 15,5 casos de VIH corresponden al indicador de prevalencia mientras que los 262 casos indican la incidencia.",
+      "Los 15,5 casos de VIH corresponden al indicador de incidencia mientras que los 262 casos indican la prevalencia.",
+      "Los 15,5 y 262 casos de VIH indican la incidencia.",
+      "Los 15,5 y 262 casos de VIH indican la prevalencia."
+    ],
+    "respuesta_correcta": "Los 15,5 casos de VIH corresponden al indicador de incidencia mientras que los 262 casos indican la prevalencia.",
+    "tipo": "opcion_simple",
+    "complejidad": "media",
+    "categoria": "Patogénesis",
+    "tiempo_estimado": 75
+  },
+  {
+    "id": "25",
+    "pregunta": "En el deterioro de los alimentos: el crecimiento microbiano no está relacionado con factores del alimento como la cantidad de humedad, los nutrientes o la alcalinidad.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Falso",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "Conservación de alimentos",
     "tiempo_estimado": 30
+  },
+  {
+    "id": "26",
+    "pregunta": "Identifique las categorías de los alimentos respecto a su deterioro: A, B, C.",
+    "opciones": ["A: Perecederos, B: No perecederos, C: Semiperecederos"],
+    "respuesta_correcta": "A: Perecederos, B: No perecederos, C: Semiperecederos",
+    "tipo": "relacionar_imagen",
+    "complejidad": "baja",
+    "categoria": "Conservación de alimentos",
+    "tiempo_estimado": 60
+  },
+  {
+    "id": "27",
+    "pregunta": "La leche sin pasteurizar contiene grasas, proteínas y carbohidratos, lo que conduce a una sucesión de microbios durante el deterioro. Ordene las etapas de este proceso.",
+    "opciones": [
+      "Desarrollo de bacterias hidrolizantes de proteínas",
+      "Producción de ácido láctico por Lactococcus lactis subp. Lactis",
+      "Degradación del ácido láctico por hongos y levaduras",
+      "Producción de ácido adicional por el género Lactobacillus"
+    ],
+    "respuesta_correcta": [
+      "Producción de ácido láctico por Lactococcus lactis subp. Lactis",
+      "Producción de ácido adicional por el género Lactobacillus",
+      "Degradación del ácido láctico por hongos y levaduras",
+      "Desarrollo de bacterias hidrolizantes de proteínas"
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "alta",
+    "categoria": "Conservación de alimentos",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "28",
+    "pregunta": "Relacione los términos con la característica que mejor lo defina.",
+    "opciones": {
+      "Factores intrínsecos": [
+        "Contenido de carbohidratos, proteínas y lípidos",
+        "El pH y potencial redox",
+        "Estructura física (moler o mezclar)"
+      ],
+      "Factores extrínsecos": ["Temperatura", "Humedad", "Atmosfera"]
+    },
+    "respuesta_correcta": {
+      "Factores intrínsecos": [
+        "Contenido de carbohidratos, proteínas y lípidos",
+        "El pH y potencial redox",
+        "Estructura física (moler o mezclar)"
+      ],
+      "Factores extrínsecos": ["Temperatura", "Humedad", "Atmosfera"]
+    },
+    "tipo": "relacionar",
+    "complejidad": "baja",
+    "categoria": "Conservación de alimentos",
+    "tiempo_estimado": 75
+  },
+  {
+    "id": "29",
+    "pregunta": "Los métodos de conservación y almacenamiento de los alimentos están diseñados para:",
+    "opciones": [
+      "Almacenar los alimentos",
+      "Ralentizar o detener el crecimiento microbiano",
+      "Cumplir normas de calidad",
+      "Favorecer el crecimiento microbiano"
+    ],
+    "respuesta_correcta": "Ralentizar o detener el crecimiento microbiano",
+    "tipo": "opcion_simple",
+    "complejidad": "baja",
+    "categoria": "Conservación de alimentos",
+    "tiempo_estimado": 45
+  },
+  {
+    "id": "30",
+    "pregunta": "La leche sin pasteurizar es un alimento complejo cuyo deterioro consta de 4 fases. Responda: a. ¿Cuáles son los factores intrínsecos y extrínsecos de la leche? b. ¿Qué método utilizaría para controlar el deterioro de la leche?",
+    "opciones": [
+      "a) Intrínsecos: contenido de carbohidratos. Extrínsecos: temperatura. b) Bajas temperaturas",
+      "a) Intrínsecos: contenido de proteínas y grasas. Extrínsecos: ambiente. b) Filtrado",
+      "a) Intrínsecos: contenido de carbohidratos, proteínas y grasas. Extrínsecos: temperatura y ambiente. b) Pasteurización",
+      "a) Intrínsecos: contenido de carbohidratos y proteínas. Extrínsecos: ambiente. b) Radiación"
+    ],
+    "respuesta_correcta": "a) Intrínsecos: contenido de carbohidratos, proteínas y grasas. Extrínsecos: temperatura y ambiente. b) Pasteurización",
+    "tipo": "multi_item",
+    "complejidad": "media",
+    "categoria": "Conservación de alimentos",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "31",
+    "pregunta": "La regulación de la traducción es el proceso mediante el cual se controla la cantidad de proteína sintetizada a partir de su ARN mensajero (ARNm) y es un paso crucial para establecer el grado de expresión génica.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Verdadero",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "Enfermedades transmitidas por alimentos",
+    "tiempo_estimado": 60
+  },
+  {
+    "id": "32",
+    "pregunta": "La imagen muestra la inhibición de la traducción de ferritina por Proteínas Reguladoras de Hierro (IRP). Identifique los elementos señalados de la A a la F.",
+    "opciones": {
+      "A": "Complejo de iniciación",
+      "B": "Escaneo por el complejo de iniciación.",
+      "C": "Escaneo por complejo de iniciación bloqueado",
+      "D": "Sitio de inicio de la traducción",
+      "E": "5'-UTR",
+      "F": "Región codificante de proteínas"
+    },
+    "respuesta_correcta": {
+      "A": "Complejo de iniciación",
+      "B": "Escaneo por el complejo de iniciación.",
+      "C": "Escaneo por complejo de iniciación bloqueado",
+      "D": "Sitio de inicio de la traducción",
+      "E": "5'-UTR",
+      "F": "Región codificante de proteínas"
+    },
+    "tipo": "relacionar_imagen",
+    "complejidad": "alta",
+    "categoria": "Regulación de la Traducción",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "33",
+    "pregunta": "Ordene de manera secuencial el proceso de la ubiquitinación, que consiste en la adición de cadenas de ubiquitina a una proteína marcada para la degradación.",
+    "opciones": [
+      "Transferencia de la ubiquitina de E1 a E2",
+      "Unión de la ubiquitina a la enzima E1",
+      "Liberación del sustrato ubiquitinizado, marcador que indicará que dicho sustrato debe ser degradado.",
+      "Acoplamiento del E2 y del sustrato al E3",
+      "Transferencia de la ubiquitina del E2 al grupo amino-terminal del sustrato proteico"
+    ],
+    "respuesta_correcta": [
+      "Unión de la ubiquitina a la enzima E1",
+      "Transferencia de la ubiquitina de E1 a E2",
+      "Acoplamiento del E2 y del sustrato al E3",
+      "Transferencia de la ubiquitina del E2 al grupo amino-terminal del sustrato proteico",
+      "Liberación del sustrato ubiquitinizado, marcador que indicará que dicho sustrato debe ser degradado."
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "alta",
+    "categoria": "Regulación Postraduccional",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "34",
+    "pregunta": "Relacione correctamente los factores del inicio de la traducción con sus funciones.",
+    "opciones": {
+      "eIF1": "Forma complejo multi-factor con eIF2, eIF3, eIF5, Met-tRNAi Met. Reconocimiento codon-anticodon",
+      "eIF2α": "Recluta al tRNAMet",
+      "eIF4B": "Helicasa que estimula eIF4A",
+      "eIF4E": "Proteína que reconoce y se une 5’CAP (m7GpppN) del mRNA"
+    },
+    "respuesta_correcta": {
+      "eIF1": "Forma complejo multi-factor con eIF2, eIF3, eIF5, Met-tRNAi Met. Reconocimiento codon-anticodon",
+      "eIF2α": "Recluta al tRNAMet",
+      "eIF4B": "Helicasa que estimula eIF4A",
+      "eIF4E": "Proteína que reconoce y se une 5’CAP (m7GpppN) del mRNA"
+    },
+    "tipo": "relacionar",
+    "complejidad": "alta",
+    "categoria": "Regulación de la Traducción",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "35",
+    "pregunta": "Seleccione el factor que regula la traducción global y contribuye en especial a la traducción de un pequeño grupo de mRNAs que codifican a proteínas claves involucradas en proliferación.",
+    "opciones": [
+      "Motivo de unión a 5 CAP y a Eif4g",
+      "Sitio de unión a tRNA",
+      "Sitio de unión a eIF3",
+      "Sitio de unión a 40S"
+    ],
+    "respuesta_correcta": "Sitio de unión a 40S",
+    "tipo": "opcion_simple",
+    "complejidad": "media",
+    "categoria": "Regulación de la Traducción",
+    "tiempo_estimado": 75
+  },
+  {
+    "id": "36",
+    "pregunta": "Describa el mecanismo de regulación por miARN que se muestra en la imagen.",
+    "opciones": [
+      "El miARN se une a una proteína para activar la transcripción del ARNm.",
+      "El miARN y su ARNm objetivo se emparejan perfectamente, una enzima en el complejo proteína-ARN cortará el ARNm por la mitad, lo que conduce a su degradación.",
+      "El miARN se transcribe a partir del ARNm para crear una copia inversa."
+    ],
+    "respuesta_correcta": "El miARN y su ARNm objetivo se emparejan perfectamente, una enzima en el complejo proteína-ARN cortará el ARNm por la mitad, lo que conduce a su degradación.",
+    "tipo": "respuesta_corta",
+    "complejidad": "media",
+    "categoria": "Regulación de la Traducción",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "37",
+    "pregunta": "Epidemiología se refiere al estudio de la incidencia, la distribución y los factores determinantes de salud y enfermedad en una población.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Verdadero",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "Microbiología y Salud",
+    "tiempo_estimado": 30
+  },
+  {
+    "id": "38",
+    "pregunta": "Observe las imágenes e identifique el tipo de enfermedad de acuerdo a su rango de alcance (A, B, C).",
+    "opciones": [
+      "A) E. endémica, B) E. epidémica, C) E. pandémica",
+      "A) E. epidémica, B) E. local, C) E. pandémica",
+      "A) E. endémica, B) E. pandémica, C) E. epidémica"
+    ],
+    "respuesta_correcta": "A) E. endémica, B) E. epidémica, C) E. pandémica",
+    "tipo": "relacionar_imagen",
+    "complejidad": "media",
+    "categoria": "Microbiología y Salud",
+    "tiempo_estimado": 75
+  },
+  {
+    "id": "39",
+    "pregunta": "Jerarquice de manera ordenada la progresión de una enfermedad infecciosa causada por un virus o un microorganismo.",
+    "opciones": [
+      "Infección",
+      "Periodo agudo",
+      "Periodo de incubación",
+      "Periodo de convalecencia",
+      "Periodo de declive"
+    ],
+    "respuesta_correcta": [
+      "Infección",
+      "Periodo de incubación",
+      "Periodo agudo",
+      "Periodo de declive",
+      "Periodo de convalecencia"
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "alta",
+    "categoria": "Microbiología y Salud",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "40",
+    "pregunta": "Relacione cada término con su significado en el contexto de la epidemiología.",
+    "opciones": {
+      "Zoonosis": "Enfermedad que infecta principalmente a los animales, pero que se transmite ocasionalmente a los humanos.",
+      "Portador": "Individuo infectado por un patógeno que presenta una infección subclínica sin síntomas.",
+      "Cuarentena": "Separación y reclusión de personas sanas que hayan podido estar expuestas a una enfermedad infecciosa.",
+      "Aislamiento": "Separación de las personas que tienen una enfermedad infecciosa de aquellas que están sanas."
+    },
+    "respuesta_correcta": {
+      "Zoonosis": "Enfermedad que infecta principalmente a los animales, pero que se transmite ocasionalmente a los humanos.",
+      "Portador": "Individuo infectado por un patógeno que presenta una infección subclínica sin síntomas.",
+      "Cuarentena": "Separación y reclusión de personas sanas que hayan podido estar expuestas a una enfermedad infecciosa.",
+      "Aislamiento": "Separación de las personas que tienen una enfermedad infecciosa de aquellas que están sanas."
+    },
+    "tipo": "relacionar",
+    "complejidad": "media",
+    "categoria": "Microbiología y Salud",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "41",
+    "pregunta": "¿Cuál es la categoría de un agente infeccioso que se propaga o transmite con facilidad y da lugar a una tasa de mortalidad alta, requiriendo una acción especial de alerta de salud pública?",
+    "opciones": ["Categoría A", "Categoría B", "Categoría especial", "Categoría C"],
+    "respuesta_correcta": "Categoría A",
+    "tipo": "opcion_simple",
+    "complejidad": "media",
+    "categoria": "Microbiología y Salud",
+    "tiempo_estimado": 60
+  },
+  {
+    "id": "42",
+    "pregunta": "Complete con la información correcta: 1. La epidemia de fuente común Cólera es causada por ______. 2. La tuberculosis es causada por ______. 3. La malaria es causada por ______.",
+    "opciones": [
+      "1-Vibrio cholerae; 2-Mycobacterium tuberculosis; 3-Plasmodium spp",
+      "1-Mycobacterium tuberculosis; 2-Vibrio cholerae; 3-Plasmodium spp",
+      "1-Plasmodium spp; 2-Mycobacterium tuberculosis; 3-Vibrio cholerae"
+    ],
+    "respuesta_correcta": "1-Vibrio cholerae; 2-Mycobacterium tuberculosis; 3-Plasmodium spp",
+    "tipo": "multi_item",
+    "complejidad": "media",
+    "categoria": "Microbiología y Salud",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "43",
+    "pregunta": "Las modificaciones de las colas terminales de las proteínas histonas alteran la accesibilidad de la cromatina. La acetilación de las colas amino terminales se asocia con regiones de la expresión génica inactiva que induce la formación e fibras de 30 nm mientras que la metilación promueve el acceso de la maquinaria de transcripción genética.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Falso",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "Estructura de la cromatina y epigenética",
+    "tiempo_estimado": 60
+  },
+  {
+    "id": "44",
+    "pregunta": "Visualice la siguiente imagen de un cromosoma y coloque sus partes.",
+    "opciones": {
+      "1": "Cromátidas hermanas",
+      "2": "Brazo corto",
+      "3": "Centrómero",
+      "4": "Constricción secundaria",
+      "5": "Telómero",
+      "6": "Cinetocoro",
+      "7": "Brazo largo",
+      "8": "Satélite"
+    },
+    "respuesta_correcta": {
+      "1": "Cromátidas hermanas",
+      "2": "Brazo corto",
+      "3": "Centrómero",
+      "4": "Constricción secundaria",
+      "5": "Telómero",
+      "6": "Cinetocoro",
+      "7": "Brazo largo",
+      "8": "Satélite"
+    },
+    "tipo": "relacionar_imagen",
+    "complejidad": "media",
+    "categoria": "Estructura de la cromatina y epigenética",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "45",
+    "pregunta": "A continuación se muestra los diferentes niveles de organización del ADN, ordene las opciones según corresponda.",
+    "opciones": [
+      "Cromosoma en metafase",
+      "Octámero de histonas",
+      "Doble hélice de ADN",
+      "Histona 1 (H1)",
+      "Fibras de 30 nm",
+      "Cromatina condensada"
+    ],
+    "respuesta_correcta": [
+      "Doble hélice de ADN",
+      "Octámero de histonas",
+      "Histona 1 (H1)",
+      "Fibras de 30 nm",
+      "Cromatina condensada",
+      "Cromosoma en metafase"
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "alta",
+    "categoria": "Estructura de la cromatina y epigenética",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "46",
+    "pregunta": "Lea con detenimiento cada uno de los siguientes enunciados y escoja la respuesta correcta que los relacione.",
+    "opciones": {
+      "Cromatina": "Conjunto compuesto por ADN eucarionte y proteínas específicas que se encargan de su organización hasta la formación de cromosomas.",
+      "Eucromatina": "Forma de la cromatina compactada ligeramente y que contiene gran concentración de genes que participan en la transcripción activa.",
+      "Heterocromatina": "Cromatina condensada por completo después de la mitosis, incluye centrómeros y telómeros de los cromosomas, además de genes inactivos.",
+      "Nucleosoma": "Primer nivel de empaquetamiento del ADN. Se describe como la organización del ADN y las proteínas histonas en complejos compactados formando un octámero."
+    },
+    "respuesta_correcta": {
+      "Cromatina": "Conjunto compuesto por ADN eucarionte y proteínas específicas que se encargan de su organización hasta la formación de cromosomas.",
+      "Eucromatina": "Forma de la cromatina compactada ligeramente y que contiene gran concentración de genes que participan en la transcripción activa.",
+      "Heterocromatina": "Cromatina condensada por completo después de la mitosis, incluye centrómeros y telómeros de los cromosomas, además de genes inactivos.",
+      "Nucleosoma": "Primer nivel de empaquetamiento del ADN. Se describe como la organización del ADN y las proteínas histonas en complejos compactados formando un octámero."
+    },
+    "tipo": "relacionar",
+    "complejidad": "media",
+    "categoria": "Estructura de la cromatina y epigenética",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "47",
+    "pregunta": "Lee detenidamente y selecciona la opción que describa la hipótesis del código de histonas.",
+    "opciones": [
+      "El estado y actividad de una región en particular de la cromatina depende de las modificaciones especificas o combinación de estas, de las colas (extremos) de las proteínas histonas de esa región. Los residuos modificados alteran la manera en que las colas de histonas de los nucleosomas vecinos interactúan entre sí. La acetilación de estos extremos puede conducir a la transformación de estructuras vecinas de organización superior de la cromatina inhibiendo el proceso de transcripción en ciertas regiones y promoviendo la condensación.",
+      "El estado y actividad de una región en particular de la cromatina depende de las modificaciones especificas o combinación de estas, de las colas (extremos) de las proteínas no histónicas de esa región. Los residuos modificados alteran la manera en que las histonas de los nucleosomas vecinos pueden interactuar con las proteínas no histónicas y generar fenómenos en la cromatina. La metilación de estos extremos puede conducir a la transformación de estructuras vecinas de organización superior de la cromatina inhibiendo el proceso de condensación y promoviendo la transcripción de genes."
+    ],
+    "respuesta_correcta": "El estado y actividad de una región en particular de la cromatina depende de las modificaciones especificas o combinación de estas, de las colas (extremos) de las proteínas histonas de esa región. Los residuos modificados alteran la manera en que las colas de histonas de los nucleosomas vecinos interactúan entre sí. La acetilación de estos extremos puede conducir a la transformación de estructuras vecinas de organización superior de la cromatina inhibiendo el proceso de transcripción en ciertas regiones y promoviendo la condensación.",
+    "tipo": "opcion_simple",
+    "complejidad": "alta",
+    "categoria": "Estructura de la cromatina y epigenética",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "48",
+    "pregunta": "Existe una herencia que no está codificada en el ADN. La inactivación del cromosoma X (cuerpo de Barr) en las células de las hembras de mamíferos gatunos tiene como consecuencia que solo uno sea transcripcionalmente activo mientras que el otro permanezca condensado. 1. ¿Qué tipo de cromatina representa esta anomalía en la organización del ADN? 2. ¿Cuál es el termino científico que denomina el fenómeno presentado? 3. ¿Cómo se podría revertir la inactivación del cromosoma X? 4. ¿Cuál es la enzima encargada de realizar la metilación en los extremos terminales de las proteínas histonas?",
+    "opciones": [
+      "1. Heterocromatina facultativa, 2. Fenómenos Epigenéticos, 3. Activación del cromosoma X antes de la formación de gametos, 4. Histona metiltransferasa",
+      "1. Heterocromatina facultativa, 2. Fenómenos genéticos, 3. Activación del cromosoma X antes de la formación de gametos, 4. Histona hidroxilasa.",
+      "1. Heterocromatina constitutiva, 2. Fenómenos epigenéticos, 3. Inactivación del cromosoma Y antes de la formación de gametos., 4. Histona metiltransferasa."
+    ],
+    "respuesta_correcta": "1. Heterocromatina facultativa, 2. Fenómenos Epigenéticos, 3. Activación del cromosoma X antes de la formación de gametos, 4. Histona metiltransferasa",
+    "tipo": "multi_item",
+    "complejidad": "alta",
+    "categoria": "Estructura de la cromatina y epigenética",
+    "tiempo_estimado": 180
+  },
+  {
+    "id": "49",
+    "pregunta": "La capacidad de construir moléculas de ADN recombinante y mantenerlas en las células se denomina recombinación homologa. En este proceso participa un vector especifico que aporta la información genética para propagar ADN clonado en una célula hospedadora mitótica, con la ayuda de enzimas catalíticas que reducen la energía necesaria para la separación del ADN y otras llamadas ligasas para unir los fragmentos entre sí.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Falso",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "Clonación molecular",
+    "tiempo_estimado": 60
+  },
+  {
+    "id": "50",
+    "pregunta": "La clonación de ADN es la introducción de un fragmento de ADN (inserto) dentro de una molécula de ADN (vector). La imagen muestra la estrategia general de la clonación del ADN, identifique cada paso.",
+    "opciones": {
+      "A": "Fragmentación enzimática del gen",
+      "B": "Linearización enzimática del vector",
+      "C": "Unión enzimática del vector con el inserto",
+      "D": "Preparación de las células bacterianas",
+      "E": "Transformación bacteriana",
+      "F": "Obtención del producto de interés",
+      "G": "Selección de la clona recombinante"
+    },
+    "respuesta_correcta": {
+      "A": "Fragmentación enzimática del gen",
+      "B": "Linearización enzimática del vector",
+      "C": "Unión enzimática del vector con el inserto",
+      "D": "Preparación de las células bacterianas",
+      "E": "Transformación bacteriana",
+      "F": "Obtención del producto de interés",
+      "G": "Selección de la clona recombinante"
+    },
+    "tipo": "relacionar_imagen",
+    "complejidad": "media",
+    "categoria": "Clonación molecular",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "51",
+    "pregunta": "Los vectores de clonación pueden albergar un fragmento de ADN exógeno. Ordene de manera descendente los siguientes tipos de vectores acorde al tamaño (en pares de bases) del inserto que pueden admitir.",
+    "opciones": [
+      "Cósmidos",
+      "Plásmidos normales",
+      "BAC (Cromosomas artificiales de bacterias)",
+      "YAC (Cromosomas artificiales de levadura)",
+      "Bacteriófago P1",
+      "Bacteriófagos (fago λ)"
+    ],
+    "respuesta_correcta": [
+      "YAC (Cromosomas artificiales de levadura)",
+      "BAC (Cromosomas artificiales de bacterias)",
+      "Bacteriófago P1",
+      "Cósmidos",
+      "Bacteriófagos (fago λ)",
+      "Plásmidos normales"
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "alta",
+    "categoria": "Clonación molecular",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "52",
+    "pregunta": "Relacione cada uno de los siguientes enunciados con el concepto correcto sobre clonación molecular.",
+    "opciones": {
+      "Vector de clonación": "Molécula de ADN de doble cadena (DNAds), con la capacidad de albergar un fragmento de ADN exógeno de interés.",
+      "Vector de expresión": "Vectores que tienen como objetivo producir un transcrito (ARN) o una proteína a partir de dicho transcrito.",
+      "Marcador de selección": "Secuencia específica que generalmente confiere un fenotipo particular, como resistencia a un antibiótico, para identificar la célula transformada.",
+      "Enzimas de restricción": "Hidrolizan enlaces entre nucleótidos internos y son nombradas con tres letras tomadas del género y especie de la bacteria de la que se aislaron.",
+      "Cósmidos": "Vectores híbridos del ADN de un plásmido que proporciona el marcador de selección y los sitios COS de los bacteriófagos."
+    },
+    "respuesta_correcta": {
+      "Vector de clonación": "Molécula de ADN de doble cadena (DNAds), con la capacidad de albergar un fragmento de ADN exógeno de interés.",
+      "Vector de expresión": "Vectores que tienen como objetivo producir un transcrito (ARN) o una proteína a partir de dicho transcrito.",
+      "Marcador de selección": "Secuencia específica que generalmente confiere un fenotipo particular, como resistencia a un antibiótico, para identificar la célula transformada.",
+      "Enzimas de restricción": "Hidrolizan enlaces entre nucleótidos internos y son nombradas con tres letras tomadas del género y especie de la bacteria de la que se aislaron.",
+      "Cósmidos": "Vectores híbridos del ADN de un plásmido que proporciona el marcador de selección y los sitios COS de los bacteriófagos."
+    },
+    "tipo": "relacionar",
+    "complejidad": "alta",
+    "categoria": "Clonación molecular",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "53",
+    "pregunta": "La transformación bacteriana consiste en la adquisición de un vector recombinante. Seleccione la opción que describe correctamente la transformación por electroporación.",
+    "opciones": [
+      "Bombardeo de las células con microesferas recubiertas con el ADN recombinante.",
+      "Incubación de células y ADN plasmídico en una solución de CaCl2 seguida de un choque térmico.",
+      "Uso de micromanipuladores para inyectar directamente el fragmento de ADN.",
+      "Aplicación de breves pulsos eléctricos de alto voltaje a las células para formar perforaciones transitorias en la membrana."
+    ],
+    "respuesta_correcta": "Aplicación de breves pulsos eléctricos de alto voltaje a las células para formar perforaciones transitorias en la membrana.",
+    "tipo": "opcion_simple",
+    "complejidad": "media",
+    "categoria": "Clonación molecular",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "54",
+    "pregunta": "Se desea elaborar una biblioteca de ADN de una especie marina para estudiar sus genes codificantes, usando insertos de 100-300 kb a partir de una muestra de mRNA. Responda: 1. ¿Qué tipo de genoteca se debe elaborar? 2. ¿Qué enzimas son claves para obtener los fragmentos a partir del mRNA? 3. ¿Qué vectores se emplearían? 4. ¿De qué microorganismo se obtiene el vector seleccionado?",
+    "opciones": [
+      "1. Genoteca genómica, 2. Transcriptasa inversa, 3. Cromosomas artificiales de levadura (YACs), 4. Fago P1.",
+      "1. Genoteca genómica, 2. Endonucleasas tipo II, 3. Cromosomas artificiales bacterianos (BACs), 4. Fago P1.",
+      "1. Genoteca de cDNA, 2. Transcriptasas inversas, 3. Cromosomas artificiales bacterianos (BACs), 4. Fago P1."
+    ],
+    "respuesta_correcta": "1. Genoteca de cDNA, 2. Transcriptasas inversas, 3. Cromosomas artificiales bacterianos (BACs), 4. Fago P1.",
+    "tipo": "multi_item",
+    "complejidad": "alta",
+    "categoria": "Clonación molecular",
+    "tiempo_estimado": 180
+  },
+  {
+    "id": "55",
+    "pregunta": "Para la producción particular de aminoácidos, ácidos orgánicos y antibióticos, los parámetros de crecimiento pueden elegirse y variarse durante el desarrollo del microorganismo utilizando un medio de cultivo con constituyentes definidos.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Verdadero",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "Microbiología Industrial y Biocombustibles",
+    "tiempo_estimado": 45
+  },
+  {
+    "id": "56",
+    "pregunta": "En el modelo estándar de un reactor de tanque agitado (STR) utilizado en bioprocesos industriales, identifique los elementos faltantes en el esquema.",
+    "opciones": {
+      "A": "Motor – Sistema de agitación",
+      "B": "Impelentes",
+      "C": "Chaqueta térmica - Chaqueta de enfriamiento",
+      "D": "Filtro de aire - Filtro de contaminación",
+      "E": "Entrada de alimentación",
+      "F": "Sensor de temperatura"
+    },
+    "respuesta_correcta": {
+      "A": "Motor – Sistema de agitación",
+      "B": "Impelentes",
+      "C": "Chaqueta térmica - Chaqueta de enfriamiento",
+      "D": "Filtro de aire - Filtro de contaminación",
+      "E": "Entrada de alimentación",
+      "F": "Sensor de temperatura"
+    },
+    "tipo": "relacionar_imagen",
+    "complejidad": "baja",
+    "categoria": "Microbiología Industrial y Biocombustibles",
+    "tiempo_estimado": 75
+  },
+  {
+    "id": "57",
+    "pregunta": "La metagenómica y la biología sintética son herramientas para la búsqueda y producción de nuevos productos de interés industrial. Ordene la metodología general para la detección funcional de microorganismos para elaborar bibliotecas metagenómicas.",
+    "opciones": [
+      "Obtención de fragmentos de ADN mediante enzimas de restricción.",
+      "Identificación de la secreción de moléculas mediante protocolos de selección.",
+      "Transformación y clonación en bacterias huésped.",
+      "Extracción de ADN de muestras naturales.",
+      "Elaboración de vectores recombinantes."
+    ],
+    "respuesta_correcta": [
+      "Extracción de ADN de muestras naturales.",
+      "Obtención de fragmentos de ADN mediante enzimas de restricción.",
+      "Elaboración de vectores recombinantes.",
+      "Transformación y clonación en bacterias huésped.",
+      "Identificación de la secreción de moléculas mediante protocolos de selección."
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "alta",
+    "categoria": "Microbiología Industrial y Biocombustibles",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "58",
+    "pregunta": "Relacione cada concepto de microbiología industrial con su definición correcta.",
+    "opciones": {
+      "Biopolímeros": "Principalmente polisacáridos producidos por microorganismos que se utilizan para modificar las características de flujo de los líquidos y sirven como agentes gelificantes.",
+      "Vacunología inversa": "Extracción de una secuencia genómica de un patógeno para ensamblar una lista de antígenos posibles para la elaboración de vacunas.",
+      "Metabolitos secundarios": "Compuestos metabólicos que se acumulan cuando los nutrientes son limitados, posterior a la fase de crecimiento exponencial.",
+      "Biocatalizadores": "Enzimas de origen microbiano con la capacidad de introducir cambios moleculares como la inserción de grupos funcionales.",
+      "Expresión génica heteróloga": "Identificación de genes de interés de un organismo, clonación y transcripción que permiten la producción de proteínas y péptidos específicos."
+    },
+    "respuesta_correcta": {
+      "Biopolímeros": "Principalmente polisacáridos producidos por microorganismos que se utilizan para modificar las características de flujo de los líquidos y sirven como agentes gelificantes.",
+      "Vacunología inversa": "Extracción de una secuencia genómica de un patógeno para ensamblar una lista de antígenos posibles para la elaboración de vacunas.",
+      "Metabolitos secundarios": "Compuestos metabólicos que se acumulan cuando los nutrientes son limitados, posterior a la fase de crecimiento exponencial.",
+      "Biocatalizadores": "Enzimas de origen microbiano con la capacidad de introducir cambios moleculares como la inserción de grupos funcionales.",
+      "Expresión génica heteróloga": "Identificación de genes de interés de un organismo, clonación y transcripción que permiten la producción de proteínas y péptidos específicos."
+    },
+    "tipo": "relacionar",
+    "complejidad": "alta",
+    "categoria": "Microbiología Industrial y Biocombustibles",
+    "tiempo_estimado": 180
+  },
+  {
+    "id": "59",
+    "pregunta": "La elaboración de biocombustibles a partir de celulosa presenta dos problemáticas: 1. La degradación de celulosa y hemicelulosa para la liberación de monómeros requiere altas temperaturas y el uso de ácidos. 2. Los biocombustibles resultantes tienen alta higroscopia y poca energía. Seleccione la opción más factible para resolver estos problemas.",
+    "opciones": [
+      "Diseñar un sistema biológico postratamiento de la degradación y utilizar bacterias que produzcan alcoholes de gran peso molecular.",
+      "Reemplazar el pretratamiento químico con microorganismos modificados genéticamente que puedan degradar celulosa en altas temperaturas y utilizar bacterias que produzcan alcoholes de gran peso molecular e hidrocarburos.",
+      "Reemplazar el pretratamiento químico con microorganismos modificados y destilar el etanol resultante dos veces para eliminar el agua."
+    ],
+    "respuesta_correcta": "Reemplazar el pretratamiento químico con microorganismos modificados genéticamente que puedan degradar celulosa en altas temperaturas y utilizar bacterias que produzcan alcoholes de gran peso molecular e hidrocarburos.",
+    "tipo": "opcion_simple",
+    "complejidad": "alta",
+    "categoria": "Microbiología Industrial y Biocombustibles",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "60",
+    "pregunta": "Bacillus thuringiensis produce un cristal de toxina que mata insectos. Observe la ilustración y responda: 1. ¿Qué tipo de aplicación microbiana implica el ejemplo? 2. ¿Qué cambios produce la toxina en la estructura de la membrana plasmática del intestino del insecto? 3. ¿Cuál es el resultado a nivel celular del efecto de la toxina?",
+    "opciones": [
+      "1. Bioinsecticidas, 2. Degradación de proteínas de membrana, 3. Pérdida del equilibrio osmótico y lisis celular.",
+      "1. Bioinsecticidas, 2. Agregación y formación de poros, 3. Pérdida del equilibrio osmótico y ATP, y lisis celular.",
+      "1. Biocatalizadores, 2. Agregación y formación de poros, 3. Degradación de la membrana plasmática."
+    ],
+    "respuesta_correcta": "1. Bioinsecticidas, 2. Agregación y formación de poros, 3. Pérdida del equilibrio osmótico y ATP, y lisis celular.",
+    "tipo": "multi_item",
+    "complejidad": "alta",
+    "categoria": "Microbiología Industrial y Biocombustibles",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "61",
+    "pregunta": "La biodegradación es un proceso natural en el que los microorganismos descomponen metabólicamente los materiales orgánicos para transformarlos en sustancias más simples y no tóxicas.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Falso",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "Biodegradación",
+    "tiempo_estimado": 45
+  },
+  {
+    "id": "62",
+    "pregunta": "Observe la imagen e identifique la secuencia correcta para la biodegradación de los hidrocarburos.",
+    "opciones": [
+      "Hidrocarburo derramado.",
+      "Paraperlucidibaca.",
+      "Degradación enzimática para llegar a H₂O y CO₂.",
+      "Oxidación del hidrocarburo."
+    ],
+    "respuesta_correcta": [
+      "Hidrocarburo derramado.",
+      "Paraperlucidibaca.",
+      "Degradación enzimática para llegar a H₂O y CO₂.",
+      "Oxidación del hidrocarburo."
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "media",
+    "categoria": "Biodegradación",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "63",
+    "pregunta": "En la siguiente lista se encuentran los pasos de la biodegradación de los pesticidas en el suelo, ordénelos secuencialmente según corresponda.",
+    "opciones": [
+      "Mineralización",
+      "Absorción y transporte",
+      "Metabolismo microbiano",
+      "Desorción",
+      "Formación de subproductos",
+      "Transformación química"
+    ],
+    "respuesta_correcta": [
+      "Absorción y transporte",
+      "Desorción",
+      "Metabolismo microbiano",
+      "Transformación química",
+      "Formación de subproductos",
+      "Mineralización"
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "alta",
+    "categoria": "Biodegradación",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "64",
+    "pregunta": "A continuación, se muestran dos columnas, relaciónelas correctamente según su criterio.",
+    "opciones": {
+      "Biodegradación anaerobia": "Descompone compuestos orgánicos utilizando otros compuestos como aceptores de electrones, nitratos, sulfatos o dióxido de carbono. Produce metano como subproducto.",
+      "Biodegradación secuencial": "Cada microorganismo tiene enzimas específicas para degradar una parte del compuesto, y los productos intermedios son utilizados por otros microorganismos en una cadena de degradación, actuando sucesivamente.",
+      "Biodegradación natural": "Acción común de los microorganismos presentes en el medio ambiente para degradar los compuestos contaminantes de forma gradual.",
+      "Biodegradación aerobia": "Emplea el oxígeno para descomponer los compuestos orgánicos en dióxido de carbono, agua y otros productos no tóxicos."
+    },
+    "respuesta_correcta": {
+      "Biodegradación anaerobia": "Descompone compuestos orgánicos utilizando otros compuestos como aceptores de electrones, nitratos, sulfatos o dióxido de carbono. Produce metano como subproducto.",
+      "Biodegradación secuencial": "Cada microorganismo tiene enzimas específicas para degradar una parte del compuesto, y los productos intermedios son utilizados por otros microorganismos en una cadena de degradación, actuando sucesivamente.",
+      "Biodegradación natural": "Acción común de los microorganismos presentes en el medio ambiente para degradar los compuestos contaminantes de forma gradual.",
+      "Biodegradación aerobia": "Emplea el oxígeno para descomponer los compuestos orgánicos en dióxido de carbono, agua y otros productos no tóxicos."
+    },
+    "tipo": "relacionar",
+    "complejidad": "media",
+    "categoria": "Biodegradación",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "65",
+    "pregunta": "¿Cuáles son los principales factores que influyen en la velocidad de biodegradación de un material o compuesto?",
+    "opciones": [
+      "Composición química",
+      "Condiciones ambientales",
+      "Actividad microbiana",
+      "Presencia de aditivos",
+      "Todas las anteriores"
+    ],
+    "respuesta_correcta": "Todas las anteriores",
+    "tipo": "opcion_simple",
+    "complejidad": "baja",
+    "categoria": "Biodegradación",
+    "tiempo_estimado": 45
+  },
+  {
+    "id": "66",
+    "pregunta": "Se evaluó la capacidad de cepas de Pseudomonas de degradar hidrocarburos. Responda: ¿Qué se entiende por mineralización? ¿Qué condiciones son favorables para la biodegradación por pseudomonas? ¿De qué manera se benefician los microorganismos de la biodegradación?",
+    "opciones": [
+      "Mineralización: Conversión a compuestos inorgánicos. Condiciones: Presencia de oxígeno. Beneficio: Obtención de energía.",
+      "Mineralización: Etapa final de descomposición a CO2 y H2O. Condiciones: Alto contenido de nutrientes y sustratos. Beneficio: Fuente de carbono y energía para crecer y reproducirse."
+    ],
+    "respuesta_correcta": "Mineralización: Etapa final de descomposición a CO2 y H2O. Condiciones: Alto contenido de nutrientes y sustratos. Beneficio: Fuente de carbono y energía para crecer y reproducirse.",
+    "tipo": "multi_item",
+    "complejidad": "alta",
+    "categoria": "Biodegradación",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "67",
+    "pregunta": "La diversidad de los microorganismos puede ser estudiada gracias al conocimiento de que la historia evolutiva está registrada en el ADN, el uso de herramientas bioinformáticas y secuencias conservadas.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Verdadero",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "Diversidad de los microorganismos",
+    "tiempo_estimado": 30
+  },
+  {
+    "id": "68",
+    "pregunta": "Nombre los clados del dominio bacteria en la siguiente gráfica de acuerdo a la letra asignada.",
+    "opciones": {
+      "A": "Termófilos",
+      "B": "Gram-positivas",
+      "C": "Fotosintéticos",
+      "D": "Proteobacteria"
+    },
+    "respuesta_correcta": {
+      "A": "Termófilos",
+      "B": "Gram-positivas",
+      "C": "Fotosintéticos",
+      "D": "Proteobacteria"
+    },
+    "tipo": "relacionar_imagen",
+    "complejidad": "media",
+    "categoria": "Diversidad de los microorganismos",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "69",
+    "pregunta": "En base al conocimiento sobre diversificación, determine el orden en que los dominios del árbol de la vida se separaron.",
+    "opciones": ["Eukarya", "Bacteria", "Archaea"],
+    "respuesta_correcta": ["Bacteria", "Archaea", "Eukarya"],
+    "tipo": "ordenamiento",
+    "complejidad": "baja",
+    "categoria": "Diversidad de los microorganismos",
+    "tiempo_estimado": 45
+  },
+  {
+    "id": "70",
+    "pregunta": "Relacione los términos con su definición.",
+    "opciones": {
+      "Riqueza de especies": "Número de especies diferentes que componen una comunidad",
+      "Abundancia de especies": "Proporción de cada especie en la comunidad",
+      "Población": "Grupo de individuos de la misma especie que habitan el mismo espacio",
+      "Comunidad": "Conjunto de poblaciones microbianas"
+    },
+    "respuesta_correcta": {
+      "Riqueza de especies": "Número de especies diferentes que componen una comunidad",
+      "Abundancia de especies": "Proporción de cada especie en la comunidad",
+      "Población": "Grupo de individuos de la misma especie que habitan el mismo espacio",
+      "Comunidad": "Conjunto de poblaciones microbianas"
+    },
+    "tipo": "relacionar",
+    "complejidad": "baja",
+    "categoria": "Diversidad de los microorganismos",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "71",
+    "pregunta": "El enfoque polifásico de la taxonomía utiliza tres clases de métodos para la identificación y la descripción de las bacterias. Identifique los métodos.",
+    "opciones": [
+      "metabólico, funcional y cinético",
+      "fenotípico, funcional y metabólico",
+      "fenotípico, genotípico y filogenético",
+      "metabólico, genómico y cinético"
+    ],
+    "respuesta_correcta": "fenotípico, genotípico y filogenético",
+    "tipo": "opcion_simple",
+    "complejidad": "baja",
+    "categoria": "Diversidad de los microorganismos",
+    "tiempo_estimado": 45
+  },
+  {
+    "id": "72",
+    "pregunta": "A partir de la siguiente imagen, determine, ¿cuál ecosistema es más abundante y cual es más rico en especies?",
+    "opciones": [
+      "Ecosistema 1 más rico con 7 especies diferentes, ecosistema 2 con más abundancia de la especie azul.",
+      "Ecosistema 1 más rico con 4 especies diferentes, ecosistema 2 con más abundancia de la especie amarilla.",
+      "Ecosistema 2 más rico con 6 especies diferentes, ecosistema 2 con más abundancia de la especie negra.",
+      "Ecosistema 2 más abundante y rico"
+    ],
+    "respuesta_correcta": "Ecosistema 1 más rico con 7 especies diferentes, ecosistema 2 con más abundancia de la especie azul.",
+    "tipo": "multi_item",
+    "complejidad": "media",
+    "categoria": "Diversidad de los microorganismos",
+    "tiempo_estimado": 75
+  },
+  {
+    "id": "73",
+    "pregunta": "El catabolismo, también conocido como fase degradativa, comprende procesos por el cual moléculas sencillas orgánicas que albergan energía son transformadas a moléculas complejas o inorgánicas, liberando energía para sintetizar ADP.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Falso",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "Catabolismo",
+    "tiempo_estimado": 60
+  },
+  {
+    "id": "74",
+    "pregunta": "Observe la imagen propuesta y asigne la molécula correcta en los espacios en blanco de acuerdo con el principio del catabolismo.",
+    "opciones": {
+      "Macromoléculas iniciales": ["Proteínas", "Lípidos"],
+      "Monómeros": ["Aminoácidos", "Ácidos grasos"],
+      "Intermediarios clave": ["Acetil (CoA)", "Piruvato"],
+      "Productos finales": ["Energía", "H₂O", "NH₃"]
+    },
+    "respuesta_correcta": {
+      "Macromoléculas iniciales": ["Proteínas", "Lípidos"],
+      "Monómeros": ["Aminoácidos", "Ácidos grasos"],
+      "Intermediarios clave": ["Acetil (CoA)", "Piruvato"],
+      "Productos finales": ["Energía", "H₂O", "NH₃"]
+    },
+    "tipo": "relacionar_imagen",
+    "complejidad": "media",
+    "categoria": "Catabolismo",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "75",
+    "pregunta": "En la siguiente lista se encuentran todos los pasos de la glucólisis, ordénelos secuencialmente hasta la obtención del piruvato.",
+    "opciones": [
+      "Fructosa-6-fosfato + ATP => Fructosa-1,6-bifosfato + ADP.",
+      "Dihidroxiacetona-fosfato = gliceraldehído-3-fosfato.",
+      "1,3-bisfosfoglicerato + ADP = 3-fosfoglicerato + ATP.",
+      "Glucosa-6-fosfato = Fructosa-6-fosfato.",
+      "2-fosfoglicerato = fosfoenolpiruvato + H₂O",
+      "Glucosa + ATP => Glucosa-6-fosfato + ADP.",
+      "fosfoenolpiruvato + ADP = piruvato + ATP.",
+      "Fructosa-1,6-bifosfato = dihidroxiacetona-fosfato + gliceraldehído-3-fosfato.",
+      "3-fosfoglicerato = 2-fosfoglicerato",
+      "Gliceraldehído-3-fosfato + NAD+ + P => 1,3-bifosfoglicerato + NADH + H+"
+    ],
+    "respuesta_correcta": [
+      "Glucosa + ATP => Glucosa-6-fosfato + ADP.",
+      "Glucosa-6-fosfato = Fructosa-6-fosfato.",
+      "Fructosa-6-fosfato + ATP => Fructosa-1,6-bifosfato + ADP.",
+      "Fructosa-1,6-bifosfato = dihidroxiacetona-fosfato + gliceraldehído-3-fosfato.",
+      "Dihidroxiacetona-fosfato = gliceraldehído-3-fosfato.",
+      "Gliceraldehído-3-fosfato + NAD+ + P => 1,3-bifosfoglicerato + NADH + H+",
+      "1,3-bisfosfoglicerato + ADP = 3-fosfoglicerato + ATP.",
+      "3-fosfoglicerato = 2-fosfoglicerato",
+      "2-fosfoglicerato = fosfoenolpiruvato + H₂O",
+      "fosfoenolpiruvato + ADP = piruvato + ATP."
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "alta",
+    "categoria": "Catabolismo",
+    "tiempo_estimado": 200
+  },
+  {
+    "id": "76",
+    "pregunta": "A continuación, se presenta una lista de rutas catabólicas, relaciónelas correctamente con su definición.",
+    "opciones": {
+      "Glucólisis": "Vía metabólica responsable de la descomposición de la glucosa en dos moléculas de piruvato.",
+      "Fermentación": "La contribución de esta ruta metabólica es la producción de ATP por fosforilaciones del sustrato.",
+      "Respiración celular": "Resulta de la degradación de la materia orgánica donde se da la absorción de oxígeno y la liberación de dióxido de carbono.",
+      "Fermentación láctica": "Vía alterna para la degradación de las pentosas la cual produce fuente importante de la coenzima reducida NADPH a partir del NADP.",
+      "Entner-Doudoroff": "En esta ruta 2 moléculas de ácido pirúvico son reducidas en 2 moléculas de NADH para formar 2 moléculas de ácido láctico como producto final."
+    },
+    "respuesta_correcta": {
+      "Glucólisis": "Vía metabólica responsable de la descomposición de la glucosa en dos moléculas de piruvato.",
+      "Fermentación": "La contribución de esta ruta metabólica es la producción de ATP por fosforilaciones del sustrato.",
+      "Respiración celular": "Resulta de la degradación de la materia orgánica donde se da la absorción de oxígeno y la liberación de dióxido de carbono.",
+      "Fermentación láctica": "En esta ruta 2 moléculas de ácido pirúvico son reducidas en 2 moléculas de NADH para formar 2 moléculas de ácido láctico como producto final.",
+      "Entner-Doudoroff": "Vía alterna para la degradación de las pentosas la cual produce fuente importante de la coenzima reducida NADPH a partir del NADP."
+    },
+    "tipo": "relacionar",
+    "complejidad": "media",
+    "categoria": "Catabolismo",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "77",
+    "pregunta": "Complete el siguiente enunciado: Todos los procesos que ocurren en la célula requieren de ______ para realizar funciones vitales como el movimiento, transporte de nutrientes y la ______ de moléculas. Esta energía está almacenada como ATP, que se forma a partir de ADP y ________.",
+    "opciones": [
+      "ATP / Degradación / Alcohol",
+      "Energía / Síntesis / Fosfato inorgánico",
+      "Luz / Regulación / Carbono",
+      "Azúcares / Producción / Oxígeno"
+    ],
+    "respuesta_correcta": "Energía / Síntesis / Fosfato inorgánico",
+    "tipo": "opcion_simple",
+    "complejidad": "baja",
+    "categoria": "Catabolismo",
+    "tiempo_estimado": 60
+  },
+  {
+    "id": "78",
+    "pregunta": "La siguiente ruta representa las etapas del catabolismo en un microorganismo heterótrofo. A. Indique la fuente de carbono, aceptor y donador de electrones. B. Identifique las moléculas finales de las rutas. C. Establezca cuales son los flujos de electrones.",
+    "opciones": [
+      "A. Donador: Glucosa, Aceptor: O2, Fuente de C: Sustratos orgánicos. B. NH3, Piruvato, Acetil-CoA. C. Líneas discontinuas (NADH, FADH2).",
+      "A. Donador: O2, Aceptor: Glucosa, Fuente de C: CO2. B. ATP. C. Líneas continuas."
+    ],
+    "respuesta_correcta": "A. Donador: Glucosa, Aceptor: O2, Fuente de C: Sustratos orgánicos. B. NH3, Piruvato, Acetil-CoA. C. Líneas discontinuas (NADH, FADH2).",
+    "tipo": "multi_item",
+    "complejidad": "alta",
+    "categoria": "Catabolismo",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "79",
+    "pregunta": "La minería de genes es el proceso mediante el cual se aíslan genes nuevos potencialmente útiles procedentes del medio ambiente, sin haber cultivado previamente los organismos que los contienen, por lo tanto, tiene un enfoque metagenómico.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Verdadero",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "Microbiología ambiental",
+    "tiempo_estimado": 45
+  },
+  {
+    "id": "80",
+    "pregunta": "De acuerdo con el esquema presentado sobre sistemas construidos para el tratamiento químico y biológico del agua, complete con la respuesta correcta.",
+    "opciones": {
+      "1": "Primario",
+      "2": "Secundario",
+      "3": "Anaerobio",
+      "4": "Aeróbico"
+    },
+    "respuesta_correcta": {
+      "1": "Primario",
+      "2": "Secundario",
+      "3": "Anaerobio",
+      "4": "Aeróbico"
+    },
+    "tipo": "relacionar_imagen",
+    "complejidad": "media",
+    "categoria": "Microbiología ambiental",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "81",
+    "pregunta": "En la lista se encuentran los pasos para la búsqueda metagenómica ambiental, ordénelos.",
+    "opciones": [
+      "Construcción de una biblioteca metagenómica",
+      "Cribado de la biblioteca en busca de colonias reactivas",
+      "Recogida de muestra de ADN de distintos lugares.",
+      "Transformación de células hospedadoras y siembra en medios selectivos."
+    ],
+    "respuesta_correcta": [
+      "Recogida de muestra de ADN de distintos lugares.",
+      "Construcción de una biblioteca metagenómica",
+      "Transformación de células hospedadoras y siembra en medios selectivos.",
+      "Cribado de la biblioteca en busca de colonias reactivas"
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "media",
+    "categoria": "Microbiología ambiental",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "82",
+    "pregunta": "Se presenta una lista de tipos de biorremediación, relacione las columnas según su definición.",
+    "opciones": {
+      "Biorremediación de ambientes contaminados con uranio": "Los principales contaminantes inorgánicos son metales y radionucleidos que no pueden ser destruidos, solo puede ser alterada su forma química.",
+      "Biorremediación de hidrocarburos": "Fuente rica de materia orgánica que los microorganismos degradan rápidamente, se estimula mediante la adición de nutrientes inorgánicos.",
+      "Biorremediación de plaguicidas": "Algunos son degradados solo cuando está presente otro material orgánico que actúa como fuente de energía primaria (cometabolismo).",
+      "Biorremediación de plásticos": "Los polihidroxialcanoatos (PHAs) son polímeros de reserva bacterianos comunes, y estos polímeros fácilmente biodegradables tienen muchas propiedades deseables."
+    },
+    "respuesta_correcta": {
+      "Biorremediación de ambientes contaminados con uranio": "Los principales contaminantes inorgánicos son metales y radionucleidos que no pueden ser destruidos, solo puede ser alterada su forma química.",
+      "Biorremediación de hidrocarburos": "Fuente rica de materia orgánica que los microorganismos degradan rápidamente, se estimula mediante la adición de nutrientes inorgánicos.",
+      "Biorremediación de plaguicidas": "Algunos son degradados solo cuando está presente otro material orgánico que actúa como fuente de energía primaria (cometabolismo).",
+      "Biorremediación de plásticos": "Los polihidroxialcanoatos (PHAs) son polímeros de reserva bacterianos comunes, y estos polímeros fácilmente biodegradables tienen muchas propiedades deseables."
+    },
+    "tipo": "relacionar",
+    "complejidad": "alta",
+    "categoria": "Microbiología ambiental",
+    "tiempo_estimado": 180
+  },
+  {
+    "id": "83",
+    "pregunta": "Complete el enunciado: Las (1)______ son los líquidos efluentes contaminados con (2)______. En el tratamiento de dichas aguas residuales se pueden utilizar procesos (3)______ y (4)______ para eliminar o neutralizar los contaminantes.",
+    "opciones": [
+      "(1) Aguas grises / (2) materia fecal / (3) biológicos / (4) químicos",
+      "(1) Aguas negras / (2) materia fecal / (3) físico químicos / (4) biológicos",
+      "(1) Aguas negras / (2) grasa / (3) químicos / (4) físicos",
+      "(1) Aguas grises / (2) aguas domésticas con surfactantes / (3) físico químicos / (4) biológicos"
+    ],
+    "respuesta_correcta": "(1) Aguas negras / (2) materia fecal / (3) físico químicos / (4) biológicos",
+    "tipo": "opcion_simple",
+    "complejidad": "media",
+    "categoria": "Microbiología ambiental",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "84",
+    "pregunta": "Observe la imagen sobre la eliminación biológica del fósforo y discuta: A) ¿De qué manera estresan a los microorganismos? B) ¿Qué es asimilado según la gráfica? C) ¿Qué se genera a partir del paso sucesivo entre los reactores?",
+    "opciones": [
+      "A) Crecimiento anaeróbico a un aeróbico. B) Ácidos grasos de cadena corta. C) Fosfato extracelular y PHA intracelular.",
+      "A) Cambio de pH. B) Glucosa. C) Acumulación de nitrógeno."
+    ],
+    "respuesta_correcta": "A) Crecimiento anaeróbico a un aeróbico. B) Ácidos grasos de cadena corta. C) Fosfato extracelular y PHA intracelular.",
+    "tipo": "multi_item",
+    "complejidad": "alta",
+    "categoria": "Microbiología ambiental",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "85",
+    "pregunta": "La fuente de energía de un organismo heterótrofo es química. Obtienen su energía por la ingestión de fuentes de energía orgánicas preformadas como carbohidratos, lípidos y proteínas.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Verdadero",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "Metabolismo bacteriano",
+    "tiempo_estimado": 30
+  },
+  {
+    "id": "86",
+    "pregunta": "De acuerdo con el esquema de diversidad catabólica, complete con la respuesta correcta.",
+    "opciones": {
+      "a": "Quimiotrofos",
+      "b": "Quimioorganotrofia",
+      "c": "Quimiolitotrofia",
+      "d": "Fotótrofos",
+      "e": "Fotoheterotrofia",
+      "f": "Fotoautótrofo"
+    },
+    "respuesta_correcta": {
+      "a": "Quimiotrofos",
+      "b": "Quimioorganotrofia",
+      "c": "Quimiolitotrofia",
+      "d": "Fotótrofos",
+      "e": "Fotoheterotrofia",
+      "f": "Fotoautótrofo"
+    },
+    "tipo": "relacionar_imagen",
+    "complejidad": "media",
+    "categoria": "Metabolismo bacteriano",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "87",
+    "pregunta": "Ordene secuencialmente los pasos de la respiración aeróbica hasta la generación de energía.",
+    "opciones": [
+      "Glucólisis",
+      "Formación de Acetil CoA",
+      "Reacción transporte de electrones",
+      "Glucosa (Sustrato)",
+      "Ciclo de Krebs",
+      "ATP"
+    ],
+    "respuesta_correcta": [
+      "Glucosa (Sustrato)",
+      "Glucólisis",
+      "Formación de Acetil CoA",
+      "Ciclo de Krebs",
+      "Reacción transporte de electrones",
+      "ATP"
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "media",
+    "categoria": "Metabolismo bacteriano",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "88",
+    "pregunta": "Se presenta una lista de tipos de transporte celular, relacione las columnas según su definición.",
+    "opciones": {
+      "Transporte activo": "Proceso mediante el cual las células acumulan solutos contra el gradiente de concentración.",
+      "Transporte simple": "Impulsado por la energía en la fuerza motriz del protón, no hay modificación química.",
+      "Traslocación de grupos": "Modificación química de la sustancia transportada impulsada por fosfoenolpiruvato.",
+      "Transporte ABC": "Las proteínas que atraviesan la membrana forman el canal de transporte y las proteínas citoplásmicas que hidrolizan ATP suministran la energía."
+    },
+    "respuesta_correcta": {
+      "Transporte activo": "Proceso mediante el cual las células acumulan solutos contra el gradiente de concentración.",
+      "Transporte simple": "Impulsado por la energía en la fuerza motriz del protón, no hay modificación química.",
+      "Traslocación de grupos": "Modificación química de la sustancia transportada impulsada por fosfoenolpiruvato.",
+      "Transporte ABC": "Las proteínas que atraviesan la membrana forman el canal de transporte y las proteínas citoplásmicas que hidrolizan ATP suministran la energía."
+    },
+    "tipo": "relacionar",
+    "complejidad": "alta",
+    "categoria": "Metabolismo bacteriano",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "89",
+    "pregunta": "Complete el enunciado: Los (1)______ tienen clorofilas que convierten la energía de la luz en (2)______. En la forma (3)______ son capaces de producir oxígeno (O2).",
+    "opciones": [
+      "(1) Quimiotrofos / (2) ATP / (3) anoxigénico",
+      "(1) Fotoautótrofos / (2) ATP / (3) anoxigénico",
+      "(1) Quimiotrofos / (2) ADP / (3) oxigénico",
+      "(1) Fotoautótrofos / (2) ATP / (3) oxigénico"
+    ],
+    "respuesta_correcta": "(1) Fotoautótrofos / (2) ATP / (3) oxigénico",
+    "tipo": "opcion_simple",
+    "complejidad": "media",
+    "categoria": "Metabolismo bacteriano",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "90",
+    "pregunta": "Observe la tabla de energía libre de hidrólisis para compuestos energéticos y responda: A) ¿Qué compuesto es más espontáneo (libera más energía)? B) ¿Qué compuesto es menos espontáneo? C) ¿Qué enlace es menos rico en energía?",
+    "opciones": [
+      "A) 1,3-Bifosfoglicerato, B) Glucosa 6-fosfato, C) Enlace éster",
+      "A) ATP, B) Acetil-CoA, C) Enlace anhídrido"
+    ],
+    "respuesta_correcta": "A) 1,3-Bifosfoglicerato, B) Glucosa 6-fosfato, C) Enlace éster",
+    "tipo": "multi_item",
+    "complejidad": "media",
+    "categoria": "Metabolismo bacteriano",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "91",
+    "pregunta": "Si un alimento se compone principalmente por carbohidratos con alta actividad de agua (frutas, verduras), primero muestra un deterioro por bacterias, las cuales degradan los polímeros permitiendo la colonización secundaria de hongos.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Falso",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "Microbiología de alimentos",
+    "tiempo_estimado": 60
+  },
+  {
+    "id": "92",
+    "pregunta": "En la figura se muestra el proceso de fermentación. Complete el proceso correspondiente acorde a las letras, tomando en cuenta que A y B son dos etapas de un mismo proceso.",
+    "opciones": {
+      "A": "Glucolisis I o Glucolisis etapa de inversión",
+      "B": "Glucolisis II o Glucolisis etapa de ganancia",
+      "C": "Fermentación láctica",
+      "D": "Fermentación alcohólica o etanólica"
+    },
+    "respuesta_correcta": {
+      "A": "Glucolisis I o Glucolisis etapa de inversión",
+      "B": "Glucolisis II o Glucolisis etapa de ganancia",
+      "C": "Fermentación láctica",
+      "D": "Fermentación alcohólica o etanólica"
+    },
+    "tipo": "relacionar_imagen",
+    "complejidad": "media",
+    "categoria": "Microbiología de alimentos",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "93",
+    "pregunta": "En la imagen se muestran varios términos clave en la microbiología de alimentos. Ordene los conceptos desde el origen de la contaminación hasta las medidas de control.",
+    "opciones": [
+      "Métodos de conservación de alimentos",
+      "Mecanismos de transmisión de microbios",
+      "Factores extrínsecos del alimento",
+      "Factores intrínsecos del alimento"
+    ],
+    "respuesta_correcta": [
+      "Mecanismos de transmisión de microbios",
+      "Factores intrínsecos del alimento",
+      "Factores extrínsecos del alimento",
+      "Métodos de conservación de alimentos"
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "media",
+    "categoria": "Microbiología de alimentos",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "94",
+    "pregunta": "Relacione los siguientes enunciados sobre microbiología de alimentos con la respuesta correcta.",
+    "opciones": {
+      "Intoxicación alimentaria": "Ingestión de alimentos con la presencia de toxinas producidas por microorganismos vivos o muertos.",
+      "Infección alimentaria": "Ingestión de alimentos que contienen patógenos viables con capacidades de desarrollo dentro del hospedador que conlleva a la enfermedad.",
+      "Bacteriocinas": "Proteínas extracelulares secretadas por bacterias como aquellas acido lácticas (BAL) que afectan la integridad y función de la membrana plasmática de agentes patógenos.",
+      "Factores intrínsecos de un alimento": "Composición Nutricional del alimento (Macronutrientes, micronutrientes).",
+      "Factores extrínsecos de un alimento": "Factores alterables: temperatura, humedad relativa, disponibilidad de agua, etc."
+    },
+    "respuesta_correcta": {
+      "Intoxicación alimentaria": "Ingestión de alimentos con la presencia de toxinas producidas por microorganismos vivos o muertos.",
+      "Infección alimentaria": "Ingestión de alimentos que contienen patógenos viables con capacidades de desarrollo dentro del hospedador que conlleva a la enfermedad.",
+      "Bacteriocinas": "Proteínas extracelulares secretadas por bacterias como aquellas acido lácticas (BAL) que afectan la integridad y función de la membrana plasmática de agentes patógenos.",
+      "Factores intrínsecos de un alimento": "Composición Nutricional del alimento (Macronutrientes, micronutrientes).",
+      "Factores extrínsecos de un alimento": "Factores alterables: temperatura, humedad relativa, disponibilidad de agua, etc."
+    },
+    "tipo": "relacionar",
+    "complejidad": "media",
+    "categoria": "Microbiología de alimentos",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "95",
+    "pregunta": "La acidificación leve es un método de conservación. Seleccione la razón por la que los ácidos orgánicos débiles son una mejor opción en el proceso de acidificación de alimento.",
+    "opciones": [
+      "Los ácidos orgánicos débiles tienen una difusión uniforme a través de la membrana celular, inhiben el transporte de nutrientes y desacoplan la transferencia de electrones.",
+      "Los ácidos orgánicos débiles producen un rápido declive en el pH y perforan la membrana celular, causando un cambio brusco en el medio intracelular."
+    ],
+    "respuesta_correcta": "Los ácidos orgánicos débiles tienen una difusión uniforme a través de la membrana celular, inhiben el transporte de nutrientes y desacoplan la transferencia de electrones.",
+    "tipo": "opcion_simple",
+    "complejidad": "alta",
+    "categoria": "Microbiología de alimentos",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "96",
+    "pregunta": "Una empresa propone utilizar metabolitos secundarios del co-cultivo de Lactobacillus bulgaricus y Streptococcus thermophilus como bioconservante. Responda: 1. ¿La asociación es sinérgica o antagónica? 2. ¿Cuál es el bioconservante más probable si se extraen proteínas? 3. ¿En qué fase de crecimiento se debe realizar la extracción?",
+    "opciones": [
+      "Antagónica - Acido sórbico - Fase logarítmica",
+      "Antagónica - Bacteriocinas - Fase estacionaria",
+      "Sinérgica - Acido sórbico - Fase de latencia",
+      "Sinérgica - Bacteriocinas - Fase estacionaria"
+    ],
+    "respuesta_correcta": "Sinérgica - Bacteriocinas - Fase estacionaria",
+    "tipo": "multi_item",
+    "complejidad": "alta",
+    "categoria": "Microbiología de alimentos",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "97",
+    "pregunta": "La microbiología es un área 100% beneficiosa para la agricultura.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Falso",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "Microbiología Agrícola",
+    "tiempo_estimado": 30
+  },
+  {
+    "id": "98",
+    "pregunta": "Observe la imagen propuesta y asigne la opción correcta en los espacios en blanco de acuerdo con el ciclo de las bacterias nitrificantes en las plantas.",
+    "opciones": {
+      "1": "Nitrógeno atmosférico",
+      "2": "Procariontes fijadores de nitrógeno",
+      "3": "Amoníaco",
+      "4": "Nitrito",
+      "5": "Nitrato",
+      "6": "Procariontes desnitrificantes"
+    },
+    "respuesta_correcta": {
+      "1": "Nitrógeno atmosférico",
+      "2": "Procariontes fijadores de nitrógeno",
+      "3": "Amoníaco",
+      "4": "Nitrito",
+      "5": "Nitrato",
+      "6": "Procariontes desnitrificantes"
+    },
+    "tipo": "relacionar_imagen",
+    "complejidad": "media",
+    "categoria": "Microbiología Agrícola",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "99",
+    "pregunta": "Los viroides son moléculas infecciosas de RNA dependientes del hospedador para su replicación. Ordene secuencialmente los pasos del ciclo lítico de los viroides hasta llegar a su replicación.",
+    "opciones": [
+      "Replicación de los componentes virales.",
+      "Fijación por receptores específicos.",
+      "Introducción en la planta a través de una herida.",
+      "Síntesis de las proteínas del viroide.",
+      "Penetración al interior de la célula hospedadora.",
+      "Lisis y liberación.",
+      "Ensamblaje de las cápsides con el ácido nucleico."
+    ],
+    "respuesta_correcta": [
+      "Introducción en la planta a través de una herida.",
+      "Fijación por receptores específicos.",
+      "Penetración al interior de la célula hospedadora.",
+      "Replicación de los componentes virales.",
+      "Síntesis de las proteínas del viroide.",
+      "Ensamblaje de las cápsides con el ácido nucleico.",
+      "Lisis y liberación."
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "alta",
+    "categoria": "Microbiología Agrícola",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "100",
+    "pregunta": "Relacione los siguientes microorganismos con su función beneficiosa en la agricultura.",
+    "opciones": {
+      "Rizobios / Azotobacter": "Bacteria fijadora de nitrógeno atmosférico en las raíces.",
+      "Actinomicetos": "Bacterias con capacidad de producir metabolitos secundarios beneficiosos, como antibióticos.",
+      "Pseudomonas": "Bacteria que puede actuar como controlador biológico de enfermedades y estimular el crecimiento de las plantas.",
+      "Hongos entomopatógenos": "Infectan y matan insectos, controlando plagas y reduciendo la necesidad de pesticidas.",
+      "Bacillus": "Bacteria que produce enzimas para descomponer la materia orgánica y mejorar la calidad del suelo.",
+      "Micorrizas": "Hongos que forman simbiosis con las raíces, permitiendo una mejor absorción de nutrientes como el fósforo y el agua."
+    },
+    "respuesta_correcta": {
+      "Rizobios / Azotobacter": "Bacteria fijadora de nitrógeno atmosférico en las raíces.",
+      "Actinomicetos": "Bacterias con capacidad de producir metabolitos secundarios beneficiosos, como antibióticos.",
+      "Pseudomonas": "Bacteria que puede actuar como controlador biológico de enfermedades y estimular el crecimiento de las plantas.",
+      "Hongos entomopatógenos": "Infectan y matan insectos, controlando plagas y reduciendo la necesidad de pesticidas.",
+      "Bacillus": "Bacteria que produce enzimas para descomponer la materia orgánica y mejorar la calidad del suelo.",
+      "Micorrizas": "Hongos que forman simbiosis con las raíces, permitiendo una mejor absorción de nutrientes como el fósforo y el agua."
+    },
+    "tipo": "relacionar",
+    "complejidad": "media",
+    "categoria": "Microbiología Agrícola",
+    "tiempo_estimado": 180
+  },
+  {
+    "id": "101",
+    "pregunta": "¿Cuál de las siguientes opciones es la correcta acerca de la rizosfera?",
+    "opciones": [
+      "La rizosfera es el espacio que rodea las raíces de las plantas y está libre de microorganismos.",
+      "La rizosfera es el espacio que rodea las raíces de las plantas y está poblado por una gran diversidad de microorganismos.",
+      "Es el espacio en el que se produce la fijación de nitrógeno y no tiene relación directa con la microbiología.",
+      "Es el espacio que se encuentra entre las capas de suelo, donde los microorganismos se replican."
+    ],
+    "respuesta_correcta": "La rizosfera es el espacio que rodea las raíces de las plantas y está poblado por una gran diversidad de microorganismos.",
+    "tipo": "opcion_simple",
+    "complejidad": "baja",
+    "categoria": "Microbiología Agrícola",
+    "tiempo_estimado": 45
+  },
+  {
+    "id": "102",
+    "pregunta": "Analice la imagen del ciclo del nitrógeno y responda: A. ¿Cómo se relaciona la desnitrificación con la agricultura? B. ¿A qué ciclo se refiere la imagen? C. ¿Cuál es la función de las bacterias desnitrificantes?",
+    "opciones": [
+      "A. Es perjudicial, reduce el nitrógeno disponible. B. Ciclo del nitrógeno. C. Utilizan el nitrato como fuente de energía y producen nitrógeno molecular.",
+      "A. Es beneficiosa, aumenta el nitrógeno disponible. B. Ciclo del carbono. C. Fijan el nitrógeno atmosférico."
+    ],
+    "respuesta_correcta": "A. Es perjudicial, reduce el nitrógeno disponible. B. Ciclo del nitrógeno. C. Utilizan el nitrato como fuente de energía y producen nitrógeno molecular.",
+    "tipo": "multi_item",
+    "complejidad": "media",
+    "categoria": "Microbiología Agrícola",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "103",
+    "pregunta": "Biorremediación se refiere a la eliminación microbiana del petróleo, compuestos químicos tóxicos y otros contaminantes ambientales, habitualmente estimulando las actividades de los microorganismos autóctonos.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Verdadero",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "Biorremediación",
+    "tiempo_estimado": 30
+  },
+  {
+    "id": "104",
+    "pregunta": "De acuerdo con la imagen, identifique el tratamiento primario y secundario durante el tratamiento de aguas residuales domésticas.",
+    "opciones": [
+      "A) Tratamiento primario, B) Tratamiento secundario",
+      "A) Tratamiento secundario, B) Tratamiento primario",
+      "A) Pretratamiento, B) Tratamiento secundario"
+    ],
+    "respuesta_correcta": "A) Tratamiento primario, B) Tratamiento secundario",
+    "tipo": "relacionar_imagen",
+    "complejidad": "baja",
+    "categoria": "Biorremediación",
+    "tiempo_estimado": 60
+  },
+  {
+    "id": "105",
+    "pregunta": "Durante el tratamiento secundario anaerobio de aguas residuales, existen varias reacciones. Jerarquice el tipo de reacción desde moléculas complejas hasta compuestos simples.",
+    "opciones": [
+      "Fermentación, hidrólisis y Metanogénesis",
+      "Hidrólisis, metanogénesis y fermentación",
+      "Fermentación, Hidrólisis y fermentación secundaria",
+      "Hidrólisis, fermentación y Metanogénesis"
+    ],
+    "respuesta_correcta": "Hidrólisis, fermentación y Metanogénesis",
+    "tipo": "ordenamiento",
+    "complejidad": "alta",
+    "categoria": "Biorremediación",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "106",
+    "pregunta": "Relacione cada término con su significado en el contexto del tratamiento de aguas.",
+    "opciones": {
+      "Xenobióticos": "Son químicos sintéticos no producidos por la naturaleza.",
+      "Aguas residuales": "Son aguas domésticas y los residuos líquidos industriales que no pueden ser eliminados sin tratamiento previo.",
+      "DBO": "Cantidad relativa de oxígeno que un organismo utiliza para oxidar un compuesto orgánico e inorgánico de una muestra de agua."
+    },
+    "respuesta_correcta": {
+      "Xenobióticos": "Son químicos sintéticos no producidos por la naturaleza.",
+      "Aguas residuales": "Son aguas domésticas y los residuos líquidos industriales que no pueden ser eliminados sin tratamiento previo.",
+      "DBO": "Cantidad relativa de oxígeno que un organismo utiliza para oxidar un compuesto orgánico e inorgánico de una muestra de agua."
+    },
+    "tipo": "relacionar",
+    "complejidad": "media",
+    "categoria": "Biorremediación",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "107",
+    "pregunta": "¿Cuál es el proceso por el cual el agua pasa por una serie de filtros diseñados para eliminar solutos orgánicos e inorgánicos, así como partículas y microorganismos?",
+    "opciones": ["Filtración", "Coagulación", "Floculación", "Clarificación"],
+    "respuesta_correcta": "Filtración",
+    "tipo": "opcion_simple",
+    "complejidad": "baja",
+    "categoria": "Biorremediación",
+    "tiempo_estimado": 45
+  },
+  {
+    "id": "108",
+    "pregunta": "De acuerdo a la gráfica sobre el tratamiento de agua: 1. ¿Cuál es el proceso de coagulación? 2. ¿Para qué se realiza la filtración? 3. ¿Qué permite la cloración?",
+    "opciones": [
+      "1. Formación del flóculo. 2. Eliminación de partículas remanentes. 3. Muerte de microorganismos.",
+      "1. Eliminación de partículas. 2. Muerte de microorganismos. 3. Formación de flóculo."
+    ],
+    "respuesta_correcta": "1. Formación del flóculo. 2. Eliminación de partículas remanentes. 3. Muerte de microorganismos.",
+    "tipo": "multi_item",
+    "complejidad": "media",
+    "categoria": "Biorremediación",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "109",
+    "pregunta": "La técnica de ADN recombinante permite la transferencia de genes entre organismos no relacionados, lo que ha llevado al desarrollo de cultivos transgénicos con beneficios agrícolas.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Verdadero",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "ADN Recombinante",
+    "tiempo_estimado": 30
+  },
+  {
+    "id": "110",
+    "pregunta": "De acuerdo con el esquema, identifique los elementos que componen una técnica de ADN recombinante.",
+    "opciones": {
+      "1": "Plásmido",
+      "2": "Gen blanco",
+      "3": "Digestión con enzimas de restricción",
+      "4": "ADN ligasa",
+      "5": "Plásmido recombinante"
+    },
+    "respuesta_correcta": {
+      "1": "Plásmido",
+      "2": "Gen blanco",
+      "3": "Digestión con enzimas de restricción",
+      "4": "ADN ligasa",
+      "5": "Plásmido recombinante"
+    },
+    "tipo": "relacionar_imagen",
+    "complejidad": "media",
+    "categoria": "ADN Recombinante",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "111",
+    "pregunta": "Ordene los pasos para realizar la técnica de ADN recombinante.",
+    "opciones": [
+      "Digerir el vector de clonación con una enzima de restricción",
+      "Mezclar el vector y el ADN inserto mediante un ADN ligasa",
+      "Aislar ADN vector y genómico",
+      "Digerir el ADN genómico con la enzima de restricción",
+      "Introducir el ADN recombinante en células hospedadoras"
+    ],
+    "respuesta_correcta": [
+      "Aislar ADN vector y genómico",
+      "Digerir el vector de clonación con una enzima de restricción",
+      "Digerir el ADN genómico con la enzima de restricción",
+      "Mezclar el vector y el ADN inserto mediante un ADN ligasa",
+      "Introducir el ADN recombinante en células hospedadoras"
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "alta",
+    "categoria": "ADN Recombinante",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "112",
+    "pregunta": "Relacione los siguientes términos con su definición en el contexto del ADN recombinante.",
+    "opciones": {
+      "Vector autorreplicante": "Elementos genéticos derivados de virus, plásmidos u otras moléculas capaces de replicarse de forma autónoma.",
+      "ADN ligasa": "Enzima que tiene como función unir fragmentos de ADN.",
+      "Enzima de restricción": "Enzimas que reconocen lugares específicos del ADN y cortan la sección.",
+      "Célula hospedadora": "Célula que alberga o acoge un material genético extraño."
+    },
+    "respuesta_correcta": {
+      "Vector autorreplicante": "Elementos genéticos derivados de virus, plásmidos u otras moléculas capaces de replicarse de forma autónoma.",
+      "ADN ligasa": "Enzima que tiene como función unir fragmentos de ADN.",
+      "Enzima de restricción": "Enzimas que reconocen lugares específicos del ADN y cortan la sección.",
+      "Célula hospedadora": "Célula que alberga o acoge un material genético extraño."
+    },
+    "tipo": "relacionar",
+    "complejidad": "media",
+    "categoria": "ADN Recombinante",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "113",
+    "pregunta": "Complete el enunciado: La técnica de ADN recombinante permite la (1)______ de genes específicos en una célula hospedadora, mediante el uso de (2)______. Una vez dentro, los genes pueden ser (3)______ y utilizados para producir proteínas.",
+    "opciones": [
+      "(1) Eliminación / (2) vectores / (3) silenciados",
+      "(1) Combinación / (2) DNA / (3) expresados",
+      "(1) Inserción / (2) vectores / (3) expresados",
+      "(1) Eliminación / (2) mRNA / (3) silenciados"
+    ],
+    "respuesta_correcta": "(1) Inserción / (2) vectores / (3) expresados",
+    "tipo": "opcion_simple",
+    "complejidad": "media",
+    "categoria": "ADN Recombinante",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "114",
+    "pregunta": "Analice el gel de electroforesis y responda: A) ¿Qué indica el gel? B) ¿Qué plásmido tiene menos kb (kilobases)? C) ¿Qué plásmido tiene más kb?",
+    "opciones": [
+      "A) Presencia de ambos plásmidos, individualmente y en conjunto en EcoRI. B) pUC19. C) pBR322.",
+      "A) Solo presencia del plásmido pUC19. B) pBR322. C) pUC19."
+    ],
+    "respuesta_correcta": "A) Presencia de ambos plásmidos, individualmente y en conjunto en EcoRI. B) pUC19. C) pBR322.",
+    "tipo": "multi_item",
+    "complejidad": "media",
+    "categoria": "ADN Recombinante",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "115",
+    "pregunta": "La técnica de PCR se basa en la replicación exponencial in vivo de una molécula de ADN genómico o ARN (ADN complementario), mediante ciclos no repetitivos.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Falso",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "PCR",
+    "tiempo_estimado": 45
+  },
+  {
+    "id": "116",
+    "pregunta": "Nombre los elementos y etapas señaladas en la imagen del ciclo de PCR.",
+    "opciones": {
+      "1": "Desnaturalización a 95°C",
+      "2": "Alineación, temperatura entre 55 y 60°C",
+      "3": "Extensión a 72°C",
+      "A": "Termociclador",
+      "B": "Taq polimerasa"
+    },
+    "respuesta_correcta": {
+      "1": "Desnaturalización a 95°C",
+      "2": "Alineación, temperatura entre 55 y 60°C",
+      "3": "Extensión a 72°C",
+      "A": "Termociclador",
+      "B": "Taq polimerasa"
+    },
+    "tipo": "relacionar_imagen",
+    "complejidad": "baja",
+    "categoria": "PCR",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "117",
+    "pregunta": "El proceso de PCR convencional consta de varios pasos y cambios de temperaturas que permiten la amplificación de secuencias de ADN in vitro, ordenar dichos pasos:",
+    "opciones": [
+      "Alineación (55°C - 60°C): hibridación de las cadenas simples con los cebadores",
+      "Inicio de la desnaturalización (95°C): inactivación de enzimas",
+      "Amplificación final (72°C): la polimerasa termina la extensión de los productos",
+      "Desnaturalización (95°C): desnaturalización de la doble cadena de ADN",
+      "Extensión (72°C): actividad de la ADN polimerasa"
+    ],
+    "respuesta_correcta": [
+      "Inicio de la desnaturalización (95°C): inactivación de enzimas",
+      "Desnaturalización (95°C): desnaturalización de la doble cadena de ADN",
+      "Alineación (55°C - 60°C): hibridación de las cadenas simples con los cebadores",
+      "Extensión (72°C): actividad de la ADN polimerasa",
+      "Amplificación final (72°C): la polimerasa termina la extensión de los productos"
+    ],
+    "tipo": "ordenamiento",
+    "complejidad": "baja",
+    "categoria": "PCR",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "118",
+    "pregunta": "Relacione los términos con la característica que mejor lo defina.",
+    "opciones": {
+      "ADNc": "Producto de un proceso de retrotranscripción, que permite convertir el ARN en una molécula estable.",
+      "Primers": "Secuencias específicas complementarias al ADN blanco, cuya función es proporcionar un extremo 3’ libre.",
+      "Primer Reverse": "Complementario y antiparalelo a la cadena 5’-3’ del ADN.",
+      "Primer Forward": "Complementario y antiparalelo a la cadena 3’-5’ del ADN."
+    },
+    "respuesta_correcta": {
+      "ADNc": "Producto de un proceso de retrotranscripción, que permite convertir el ARN en una molécula estable.",
+      "Primers": "Secuencias específicas complementarias al ADN blanco, cuya función es proporcionar un extremo 3’ libre.",
+      "Primer Reverse": "Complementario y antiparalelo a la cadena 5’-3’ del ADN.",
+      "Primer Forward": "Complementario y antiparalelo a la cadena 3’-5’ del ADN."
+    },
+    "tipo": "relacionar",
+    "complejidad": "baja",
+    "categoria": "PCR",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "119",
+    "pregunta": "Escoja las características que debe tener un primer para ser utilizado en la PCR.",
+    "opciones": [
+      "La secuencia de los cebadores debe ser inespecífica para el gen de interés, un contenido mínimo G-C de 60% y una longitud de 18 a 30 nt.",
+      "La secuencia de los cebadores debe ser específica para el gen de interés, un contenido G-C de 40 a 60% y una longitud de 18 a 30 nt.",
+      "La secuencia de los cebadores debe ser específica para el gen de interés, un contenido G-C de 10 a 90% y una longitud de 150 a 400 nt.",
+      "La secuencia de los cebadores debe ser específica para el gen de interés, un contenido máximo de G-C de 20% y una longitud de 200 a 500 nt."
+    ],
+    "respuesta_correcta": "La secuencia de los cebadores debe ser específica para el gen de interés, un contenido G-C de 40 a 60% y una longitud de 18 a 30 nt.",
+    "tipo": "opcion_simple",
+    "complejidad": "baja",
+    "categoria": "PCR",
+    "tiempo_estimado": 60
+  },
+  {
+    "id": "120",
+    "pregunta": "Interprete el gel obtenido tras procesar 3 muestras de pacientes sospechosos de portar Covid 19. a. ¿Cuáles pacientes son portadores? b. ¿Cuáles pacientes no son portadores? c. ¿Cuál es la razón para que la banda del carril P2 sea más intensa?",
+    "opciones": [
+      "a. paciente 2 y 3, b. paciente 1, c. existe más carga viral",
+      "a. paciente 1, b. paciente 2, c. existe menos carga viral",
+      "a. paciente 1 y 2, b. paciente 3, c. existe contaminación"
+    ],
+    "respuesta_correcta": "a. paciente 2 y 3, b. paciente 1, c. existe más carga viral",
+    "tipo": "multi_item",
+    "complejidad": "media",
+    "categoria": "PCR",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "121",
+    "pregunta": "Los genes eucariotas contienen numerosos intrones y exones, y los exones deben ser eliminados con precisión, para permitir que el mRNA salga del núcleo y sirva como plantilla para el ensamblaje de proteínas.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Falso",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "Regulación del procesamiento de RNA en eucariotes",
+    "tiempo_estimado": 45
+  },
+  {
+    "id": "122",
+    "pregunta": "Nombrar los componentes de la siguiente gráfica sobre el procesamiento del ARN.",
+    "opciones": {
+      "A": "ADN",
+      "B": "Pre-mRNA",
+      "C": "mRNA",
+      "D": "Exones"
+    },
+    "respuesta_correcta": {
+      "A": "ADN",
+      "B": "Pre-mRNA",
+      "C": "mRNA",
+      "D": "Exones"
+    },
+    "tipo": "relacionar_imagen",
+    "complejidad": "baja",
+    "categoria": "Regulación del procesamiento de RNA en eucariotes",
+    "tiempo_estimado": 75
+  },
+  {
+    "id": "123",
+    "pregunta": "Ordene los pasos del flujo de información genética, desde el ADN hasta la proteína, en eucariotas.",
+    "opciones": ["Proteína", "ADN", "Pre-mRNA", "mRNA"],
+    "respuesta_correcta": ["ADN", "Pre-mRNA", "mRNA", "Proteína"],
+    "tipo": "ordenamiento",
+    "complejidad": "baja",
+    "categoria": "Regulación del procesamiento de RNA en eucariotes",
+    "tiempo_estimado": 60
+  },
+  {
+    "id": "124",
+    "pregunta": "Relacione los términos con la característica que mejor lo defina.",
+    "opciones": {
+      "Edición de RNA": "Los nucleótidos específicos se convierten en otros nucleótidos, después de que se ha transcrito el RNA.",
+      "Exón": "Bloques de secuencias codificadoras para formar el ARNm maduro.",
+      "Intrón": "Secuencias intragénicas no codificadoras.",
+      "Potenciadores": "Sirven como sitios de unión para proteínas reguladoras."
+    },
+    "respuesta_correcta": {
+      "Edición de RNA": "Los nucleótidos específicos se convierten en otros nucleótidos, después de que se ha transcrito el RNA.",
+      "Exón": "Bloques de secuencias codificadoras para formar el ARNm maduro.",
+      "Intrón": "Secuencias intragénicas no codificadoras.",
+      "Potenciadores": "Sirven como sitios de unión para proteínas reguladoras."
+    },
+    "tipo": "relacionar",
+    "complejidad": "baja",
+    "categoria": "Regulación del procesamiento de RNA en eucariotes",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "125",
+    "pregunta": "La edición de RNA puede crear:",
+    "opciones": [
+      "Codones de inicio y eliminación de aminoácidos",
+      "Proteínas estables",
+      "Codones de parada y sustituciones de aminoácidos",
+      "Ninguna de las anteriores"
+    ],
+    "respuesta_correcta": "Codones de parada y sustituciones de aminoácidos",
+    "tipo": "opcion_simple",
+    "complejidad": "baja",
+    "categoria": "Regulación del procesamiento de RNA en eucariotes",
+    "tiempo_estimado": 45
+  },
+  {
+    "id": "126",
+    "pregunta": "Un ejemplo de edición de RNA es la apolipoproteína B-100, que, en el hígado, se traduce a partir de un mRNA de longitud completa, mientras que, en el intestino, la citidina se convierte enzimáticamente en una uridina y termina la traducción. A partir de este ejemplo, identifique que proceso de edición de RNA se dio.",
+    "opciones": [
+      "Se produce un codón de inicio",
+      "Se produce un codón de parada y se genera una proteína truncada",
+      "Se cambia un aminoácido",
+      "Todas las anteriores"
+    ],
+    "respuesta_correcta": "Se produce un codón de parada y se genera una proteína truncada",
+    "tipo": "opcion_simple",
+    "complejidad": "media",
+    "categoria": "Regulación del procesamiento de RNA en eucariotes",
+    "tiempo_estimado": 75
+  },
+  {
+    "id": "127",
+    "pregunta": "La reacción en cadena de la polimerasa (PCR) es una técnica molecular que permite la producción (amplificación) rápida de millones a miles de millones de un segmento específico de ARN.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Falso",
+    "tipo": "verdadero_falso",
+    "complejidad": "baja",
+    "categoria": "PCR",
+    "tiempo_estimado": 45
+  },
+  {
+    "id": "128",
+    "pregunta": "Observe la siguiente imagen del ciclo de PCR y ponga el proceso que corresponde y la temperatura a la que trabaja.",
+    "opciones": {
+      "1": "Desnaturalización a 95-96°C",
+      "2": "Alineación o unión al cebador a 68°C",
+      "3": "Elongación a 72°C"
+    },
+    "respuesta_correcta": {
+      "1": "Desnaturalización a 95-96°C",
+      "2": "Alineación o unión al cebador a 68°C",
+      "3": "Elongación a 72°C"
+    },
+    "tipo": "relacionar_imagen",
+    "complejidad": "baja",
+    "categoria": "PCR",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "129",
+    "pregunta": "Lea los enunciados y ordene de manera secuencial las fases de la qPCR representadas en la curva de amplificación.",
+    "opciones": ["Fase lineal", "Fase estacionaria", "Fase inicial", "Fase exponencial"],
+    "respuesta_correcta": ["Fase inicial", "Fase exponencial", "Fase lineal", "Fase estacionaria"],
+    "tipo": "ordenamiento",
+    "complejidad": "media",
+    "categoria": "qPCR",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "130",
+    "pregunta": "Relacione correctamente los diferentes tipos de PCR con su descripción.",
+    "opciones": {
+      "PCR de largo alcance": "Amplificación de fragmentos de varias kbs.",
+      "PCR inversa": "Es utilizado para amplificar fragmentos de secuencia desconocida.",
+      "PCR multiplex": "Se amplifica varios segmentos de ADN al mismo tiempo usando varios pares de primers.",
+      "PCR anidada": "Son PCR consecutivas en la cual el templado de la segunda PCR es el producto de la primera.",
+      "RT-PCR": "Se amplifica RNA mediante la generación de cDNA mediante una transcriptasa reversa.",
+      "PCR cuantitativa en tiempo real qPCR": "Permite realizar una cuantificación del fragmento de ácido nucleico blanco presente en la muestra original."
+    },
+    "respuesta_correcta": {
+      "PCR de largo alcance": "Amplificación de fragmentos de varias kbs.",
+      "PCR inversa": "Es utilizado para amplificar fragmentos de secuencia desconocida.",
+      "PCR multiplex": "Se amplifica varios segmentos de ADN al mismo tiempo usando varios pares de primers.",
+      "PCR anidada": "Son PCR consecutivas en la cual el templado de la segunda PCR es el producto de la primera.",
+      "RT-PCR": "Se amplifica RNA mediante la generación de cDNA mediante una transcriptasa reversa.",
+      "PCR cuantitativa en tiempo real qPCR": "Permite realizar una cuantificación del fragmento de ácido nucleico blanco presente en la muestra original."
+    },
+    "tipo": "relacionar",
+    "complejidad": "alta",
+    "categoria": "Variaciones de PCR",
+    "tiempo_estimado": 180
+  },
+  {
+    "id": "131",
+    "pregunta": "Tanto la PCR como la qPCR amplifican ADN. La principal diferencia es que la qPCR permite monitorear la amplificación en tiempo real. ¿Cuál de las siguientes opciones NO es una característica de la qPCR?",
+    "opciones": [
+      "Amplificación y detección de productos en una misma etapa",
+      "Mayor especificidad",
+      "Detección al final de la fase exponencial",
+      "Equipamiento y reactivos costosos",
+      "Mayor sensibilidad"
+    ],
+    "respuesta_correcta": "Detección al final de la fase exponencial",
+    "tipo": "opcion_simple",
+    "complejidad": "media",
+    "categoria": "qPCR",
+    "tiempo_estimado": 75
+  },
+  {
+    "id": "132",
+    "pregunta": "Se muestra el esquema general de la técnica RT-PCR. ¿Cuándo se utiliza esta técnica y qué es la retrotranscripción?",
+    "opciones": [
+      "Se usa para detectar ADN viral; la retrotranscripción es la síntesis de ARN desde ADN.",
+      "Se usa para detectar y amplificar ARN de organismos como virus; la retrotranscripción es la síntesis de la primera cadena de cDNA catalizada por la transcriptasa reversa a partir de un oligo dT."
+    ],
+    "respuesta_correcta": "Se usa para detectar y amplificar ARN de organismos como virus; la retrotranscripción es la síntesis de la primera cadena de cDNA catalizada por la transcriptasa reversa a partir de un oligo dT.",
+    "tipo": "respuesta_corta",
+    "complejidad": "media",
+    "categoria": "RT-PCR",
+    "tiempo_estimado": 120
+  },
+  {
+    "id": "133",
+    "pregunta": "Identifique a qué corresponde cada parte de la nomenclatura de la enzima de restricción EcoRI.",
+    "opciones": {
+      "E (Escherichia)": "Género de la bacteria",
+      "co (coli)": "Especie de la bacteria",
+      "R (RY13)": "Cepa de la bacteria",
+      "I (La primera enzima identificada)": "Orden de identificación de la enzima"
+    },
+    "respuesta_correcta": {
+      "E (Escherichia)": "Género de la bacteria",
+      "co (coli)": "Especie de la bacteria",
+      "R (RY13)": "Cepa de la bacteria",
+      "I (La primera enzima identificada)": "Orden de identificación de la enzima"
+    },
+    "tipo": "relacionar",
+    "complejidad": "baja",
+    "categoria": "Enzimas de restricción",
+    "tiempo_estimado": 90
+  },
+  {
+    "id": "134",
+    "pregunta": "Relacione los conceptos sobre enzimas y mapas de restricción con su respectiva característica.",
+    "opciones": {
+      "Isoesquizómeros": "Enzimas de restricción aisladas de diferentes organismos pero que reconocen la misma diana y generan el mismo corte.",
+      "Neosquizómeros": "Enzimas de restricción aisladas de diferentes organismos pero que reconocen la misma diana y generan un corte diferente.",
+      "Corte romo": "Corte del ADN en el que las hebras resultantes son simétricas y de doble cadena.",
+      "Corte cohesivo": "Corte del ADN en el que las hebras resultantes son asimétricas y los extremos son monocatenarios.",
+      "Mapa de restricción": "ADN lineal o circular que posee sitios de restricción o dianas.",
+      "Enzima de restricción": "Aislada a partir de bacterias. Corta el ADN en sitios específicos de la secuencia."
+    },
+    "respuesta_correcta": {
+      "Isoesquizómeros": "Enzimas de restricción aisladas de diferentes organismos pero que reconocen la misma diana y generan el mismo corte.",
+      "Neosquizómeros": "Enzimas de restricción aisladas de diferentes organismos pero que reconocen la misma diana y generan un corte diferente.",
+      "Corte romo": "Corte del ADN en el que las hebras resultantes son simétricas y de doble cadena.",
+      "Corte cohesivo": "Corte del ADN en el que las hebras resultantes son asimétricas y los extremos son monocatenarios.",
+      "Mapa de restricción": "ADN lineal o circular que posee sitios de restricción o dianas.",
+      "Enzima de restricción": "Aislada a partir de bacterias. Corta el ADN en sitios específicos de la secuencia."
+    },
+    "tipo": "relacionar",
+    "complejidad": "media",
+    "categoria": "Enzimas de restricción",
+    "tiempo_estimado": 150
+  },
+  {
+    "id": "135",
+    "pregunta": "Un mapa de restricción representa una secuencia de ADN que posee sitios de restricción en los que enzimas de tipo I pueden cortar, generando fragmentos de ADN de la misma longitud. Luego, los fragmentos son separados por electroforesis gracias a la carga positiva de sus grupos fosfato.",
+    "opciones": ["Verdadero", "Falso"],
+    "respuesta_correcta": "Falso",
+    "tipo": "verdadero_falso",
+    "complejidad": "media",
+    "categoria": "Enzimas de restricción",
+    "tiempo_estimado": 75
+  },
+  {
+    "id": "136",
+    "pregunta": "El gráfico corresponde al Sistema bacteriano de restricción-modificación. A. ¿Qué se considera este sistema? B. ¿Qué tipo de enzima es la REase? C. ¿Qué tipo de enzima es la MTase? D. ¿Por qué la REase corta el ADN del fago? E. ¿Por qué la MTase modifica el ADN bacteriano?",
+    "opciones": [
+      "A4, B3, C4, D2, E4",
+      "A3, B2, C4, D2, E1",
+      "A2, B3, C4, D1, E4",
+      "A3, B1, C4, D2, E3"
+    ],
+    "respuesta_correcta": "A4, B3, C4, D2, E4",
+    "tipo": "multi_item",
+    "complejidad": "alta",
+    "categoria": "Enzimas de restricción",
+    "tiempo_estimado": 180
+  },
+  {
+    "id": "137",
+    "pregunta": "Clasificar las características de las Enzimas de restricción según el tipo al que corresponda (Tipo I, II, III, IV).",
+    "opciones": [
+      {
+        "Tipo I": [
+          "Corta el ADN al azar, lejos del sitio de reconocimiento",
+          "Complejo de múltiples subunidades"
+        ]
+      },
+      {
+        "Tipo II": [
+          "Varios subtipos",
+          "Comúnmente utilizado en biología molecular",
+          "Grupos de proteínas no relacionadas",
+          "Corta en una secuencia definida"
+        ]
+      },
+      {
+        "Tipo III": [
+          "Enzimas de restricción y modificación",
+          "Requieren 2 sitios de restricción",
+          "Corta fuera de los sitios de restricción"
+        ]
+      },
+      { "Tipo IV": ["Requieren Mg2+ para la actividad", "Corta el ADN modificado"] }
+    ],
+    "respuesta_correcta": [
+      {
+        "Tipo I": [
+          "Corta el ADN al azar, lejos del sitio de reconocimiento",
+          "Complejo de múltiples subunidades"
+        ]
+      },
+      {
+        "Tipo II": [
+          "Varios subtipos",
+          "Comúnmente utilizado en biología molecular",
+          "Grupos de proteínas no relacionadas",
+          "Corta en una secuencia definida"
+        ]
+      },
+      {
+        "Tipo III": [
+          "Enzimas de restricción y modificación",
+          "Requieren 2 sitios de restricción",
+          "Corta fuera de los sitios de restricción"
+        ]
+      },
+      { "Tipo IV": ["Requieren Mg2+ para la actividad", "Corta el ADN modificado"] }
+    ],
+    "tipo": "clasificacion",
+    "complejidad": "alta",
+    "categoria": "Enzimas de restricción",
+    "tiempo_estimado": 180
+  },
+  {
+    "id": "138",
+    "pregunta": "¿Cuáles son los parámetros de restricción óptimos para la actividad de la mayoría de las enzimas de restricción?",
+    "opciones": [
+      "Temperatura de 15°C, pH de 5 a 6, presencia de iones como Mg2+.",
+      "Temperatura de 50°C, pH de 3 a 4, presencia de iones como Cl-.",
+      "Temperatura de 20°C, pH de 7 a 8, presencia de iones como Cl-.",
+      "Temperatura de 37°C, pH de 7 a 8, presencia de iones como Mg2+, Na+ o K+."
+    ],
+    "respuesta_correcta": "Temperatura de 37°C, pH de 7 a 8, presencia de iones como Mg2+, Na+ o K+.",
+    "tipo": "opcion_simple",
+    "complejidad": "media",
+    "categoria": "Enzimas de restricción",
+    "tiempo_estimado": 60
   }
 ]

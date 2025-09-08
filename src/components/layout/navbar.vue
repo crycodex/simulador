@@ -25,7 +25,7 @@ const getThemeLabel = () => {
 </script>
 
 <template>
-  <div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar shadow-sm fixed top-0 left-0 right-0 z-50 backdrop-blur-sm">
     <div class="flex-1">
       <a class="btn btn-ghost text-xl">Simulador</a>
     </div>
@@ -40,16 +40,6 @@ const getThemeLabel = () => {
             <Icon :icon="getThemeIcon()" class="w-5 h-5" />
             <span class="hidden sm:inline">{{ getThemeLabel() }}</span>
           </button>
-        </li>
-        <li><a>Link</a></li>
-        <li>
-          <details>
-            <summary>Parent</summary>
-            <ul class="bg-base-100 rounded-t-none p-2">
-              <li><a>Link 1</a></li>
-              <li><a>Link 2</a></li>
-            </ul>
-          </details>
         </li>
       </ul>
     </div>
