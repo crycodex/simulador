@@ -11,7 +11,6 @@ export function useSimulador() {
   // Estado del simulador
   const estado = ref<EstadoSimulador>('configurando')
   const configuracion = ref<ConfiguracionSimulador>({
-    complejidad: 'todas',
     cantidad_preguntas: 10,
     duracion_minutos: 30,
   })
@@ -59,17 +58,8 @@ export function useSimulador() {
   }
 
   const seleccionarPreguntas = () => {
-    let preguntasFiltradas = [...preguntas.value]
-
-    // Filtrar por complejidad
-    if (configuracion.value.complejidad !== 'todas') {
-      preguntasFiltradas = preguntasFiltradas.filter(
-        (p) => p.complejidad === configuracion.value.complejidad,
-      )
-    }
-
-    // Mezclar y seleccionar cantidad
-    const preguntasMezcladas = [...preguntasFiltradas].sort(() => Math.random() - 0.5)
+    // Mezclar todas las preguntas y seleccionar cantidad
+    const preguntasMezcladas = [...preguntas.value].sort(() => Math.random() - 0.5)
     preguntasSeleccionadas.value = preguntasMezcladas.slice(
       0,
       configuracion.value.cantidad_preguntas,

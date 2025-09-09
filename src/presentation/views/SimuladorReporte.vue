@@ -209,12 +209,6 @@ const verDetalles = () => {
                     </span>
                   </div>
                   <div class="flex justify-between items-center">
-                    <span class="font-medium">Complejidad seleccionada:</span>
-                    <span class="badge badge-outline">
-                      {{ resultado.configuracion.complejidad }}
-                    </span>
-                  </div>
-                  <div class="flex justify-between items-center">
                     <span class="font-medium">Fecha del simulador:</span>
                     <span class="text-sm">
                       {{ new Date(resultado.fecha).toLocaleDateString() }}
