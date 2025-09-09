@@ -41,6 +41,18 @@ const getThemeLabel = () => {
             <span class="hidden sm:inline">{{ getThemeLabel() }}</span>
           </button>
         </li>
+        <li>
+          <!-- github icon -->
+          <a href="https://github.com/crycodex/simulador" target="_blank" class="btn btn-ghost btn-sm gap-2">
+            <Icon icon="lucide:github" class="w-5 h-5" />
+          </a>
+        </li>
+        <!-- issue icon -->
+        <li>
+          <a href="https://github.com/crycodex/simulador/issues/new" target="_blank" class="btn btn-ghost btn-sm gap-2">
+            <Icon icon="pajamas:issue-type-feature-flag" class="w-5 h-5" />
+          </a>
+        </li>
       </ul>
     </div>
   </div>
