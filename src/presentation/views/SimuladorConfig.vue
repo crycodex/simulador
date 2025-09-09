@@ -9,13 +9,6 @@ const simuladorStore = useSimuladorStore()
 const { configuracion } = storeToRefs(simuladorStore)
 const { iniciarSimulador, cargarPreguntas } = simuladorStore
 
-const complejidades = [
-  { value: 'todas', label: 'Todas las complejidades', icon: 'lucide:layers' },
-  { value: 'basica', label: 'Básica', icon: 'lucide:circle' },
-  { value: 'intermedia', label: 'Intermedia', icon: 'lucide:circle-dot' },
-  { value: 'avanzada', label: 'Avanzada', icon: 'lucide:circle-dot-filled' },
-]
-
 const cantidadesPreguntas = [5, 10, 15, 20, 25, 30, 50]
 const duraciones = [10, 15, 30, 45, 60, 90, 120]
 
@@ -52,29 +45,6 @@ const iniciarSimuladorConfig = async () => {
             </h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <!-- Complejidad -->
-              <div class="form-control">
-                <label class="label">
-                  <span class="label-text text-lg font-semibold">Complejidad</span>
-                </label>
-                <div class="grid grid-cols-2 gap-3">
-                  <div
-                    v-for="complejidad in complejidades"
-                    :key="complejidad.value"
-                    class="card bg-base-100 cursor-pointer transition-all hover:shadow-md"
-                    :class="{
-                      'ring-2 ring-primary': configuracion.complejidad === complejidad.value,
-                    }"
-                    @click="configuracion.complejidad = complejidad.value as any"
-                  >
-                    <div class="card-body p-4 text-center">
-                      <Icon :icon="complejidad.icon" class="w-6 h-6 mx-auto mb-2" />
-                      <span class="text-sm font-medium">{{ complejidad.label }}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
               <!-- Cantidad de preguntas -->
               <div class="form-control">
                 <label class="label">
@@ -104,31 +74,22 @@ const iniciarSimuladorConfig = async () => {
                   </option>
                 </select>
               </div>
+            </div>
 
-              <!-- Resumen de configuración -->
-              <div class="form-control">
-                <label class="label">
-                  <span class="label-text text-lg font-semibold">Resumen</span>
-                </label>
-                <div class="card bg-base-100 p-4">
-                  <div class="space-y-2">
-                    <div class="flex items-center gap-2">
-                      <Icon icon="lucide:layers" class="w-4 h-4" />
-                      <span
-                        >Complejidad:
-                        {{
-                          complejidades.find((c) => c.value === configuracion.complejidad)?.label
-                        }}</span
-                      >
-                    </div>
-                    <div class="flex items-center gap-2">
-                      <Icon icon="lucide:help-circle" class="w-4 h-4" />
-                      <span>Preguntas: {{ configuracion.cantidad_preguntas }}</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                      <Icon icon="lucide:clock" class="w-4 h-4" />
-                      <span>Duración: {{ configuracion.duracion_minutos }} min</span>
-                    </div>
+            <!-- Resumen de configuración -->
+            <div class="mt-8">
+              <div class="card bg-base-100 p-6">
+                <h3 class="text-lg font-semibold mb-4">Resumen de Configuración</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="flex items-center gap-3">
+                    <Icon icon="lucide:help-circle" class="w-5 h-5 text-primary" />
+                    <span class="text-base">Preguntas: {{ configuracion.cantidad_preguntas }}</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <Icon icon="lucide:clock" class="w-5 h-5 text-primary" />
+                    <span class="text-base"
+                      >Duración: {{ configuracion.duracion_minutos }} minutos</span
+                    >
                   </div>
                 </div>
               </div>
@@ -155,7 +116,7 @@ const iniciarSimuladorConfig = async () => {
               <Icon icon="lucide:target" class="w-8 h-8 text-primary mx-auto mb-2" />
               <h3 class="font-semibold">Evaluación Completa</h3>
               <p class="text-sm text-base-content/70">
-                Preguntas de diferentes complejidades para evaluar tu nivel
+                Preguntas variadas para evaluar tu nivel de conocimiento
               </p>
             </div>
           </div>

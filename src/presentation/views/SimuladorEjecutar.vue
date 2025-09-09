@@ -233,7 +233,7 @@ const getEstadoPregunta = (index: number) => {
 onMounted(() => {
   console.log('Estado del simulador al montar:', estado.value)
   console.log('Preguntas disponibles:', totalPreguntas.value)
-  if (estado.value === 'configurando' || totalPreguntas.value === 0) {
+  if (estado.value === 'configurando') {
     console.log('Redirigiendo a configuración...')
     router.push('/simulador/config')
   } else {

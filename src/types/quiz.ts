@@ -4,7 +4,7 @@ export interface Pregunta {
   opciones: string[]
   respuesta_correcta: string | string[] | Record<string, string>
   tipo: 'verdadero_falso' | 'opcion_multiple' | 'ordenamiento' | 'relacionar'
-  complejidad: 'basica' | 'intermedia' | 'avanzada'
+  complejidad: 'baja' | 'media' | 'alta'
   categoria?: string
   tiempo_estimado?: number // en segundos
 }
@@ -18,7 +18,6 @@ export interface RespuestaUsuario {
 }
 
 export interface ConfiguracionSimulador {
-  complejidad: 'basica' | 'intermedia' | 'avanzada' | 'todas'
   cantidad_preguntas: number
   duracion_minutos: number
   categoria?: string
